@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMD Water Station", "SMD Water Station.csproj", "{6CD0D274-F1E3-47C8-8BC4-7812D58FDF4D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "..\..\Projects\POS & Inventory System with Sales Management\Models\Models.csproj", "{F2DCE0FD-2322-4941-963B-38203DEFE6A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{6CD0D274-F1E3-47C8-8BC4-7812D58FDF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CD0D274-F1E3-47C8-8BC4-7812D58FDF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CD0D274-F1E3-47C8-8BC4-7812D58FDF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DCE0FD-2322-4941-963B-38203DEFE6A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DCE0FD-2322-4941-963B-38203DEFE6A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DCE0FD-2322-4941-963B-38203DEFE6A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DCE0FD-2322-4941-963B-38203DEFE6A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

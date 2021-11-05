@@ -1,8 +1,8 @@
-﻿using SMD_Water_Station.Classes;
+﻿using SMD_Water_Station.Helpers;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
-
+using Models;
 namespace SMD_Water_Station
 {
     public partial class Signin : Form
@@ -35,27 +35,6 @@ namespace SMD_Water_Station
             }
         }
 
-        //Button: Sign in
-        private void Button_signin_Click(object sender, EventArgs e)
-        {
-            User.userID = Textbox_ID.Text.Trim();
-            User.password = Textbox_password.Text.Trim();
-
-            if (User.SignIn() == true)
-            {
-                User.GetAccountDetails();
-                FormHandler.signIn.Hide();
-                FormHandler.signIn.Textbox_password.Clear();
-                FormHandler.ShowMaininterface();
-            }
-            else
-            {
-                Label_UserID.ForeColor = Color.Red;
-                Label_Password.ForeColor = Color.Red;
-                timer1.Enabled = true;
-            }
-        }
-
         //Timer
         private void timer1_Tick(object sender, EventArgs e)
         {
@@ -68,9 +47,30 @@ namespace SMD_Water_Station
         {
             if (e.KeyCode == Keys.Enter)
             {
-                Button_signin_Click(this, new EventArgs());
+                Button_Submit_Click(this, new EventArgs());
             }
         }
 
+        private void Button_Submit_Click(object sender, EventArgs e)
+        {
+            User user = new User();
+            user.userId = Textbox_ID.Text.TrimEnd();
+            user.password = Textbox_password.Text.Trim();
+
+            if (user.SignIn() == true)
+            {
+                User._userID = user.userId;
+                FormHandler.signIn.Hide();
+                FormHandler.signIn.Textbox_password.Clear();
+                FormHandler.ShowMaininterface();
+
+            }
+            else
+            {
+                Label_UserID.ForeColor = Color.Red;
+                Label_Password.ForeColor = Color.Red;
+                timer1.Enabled = true;
+            }
+        }
     }
 }

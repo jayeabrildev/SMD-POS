@@ -68,6 +68,30 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="ClosedXML, Version=0.95.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\ClosedXML.0.95.4\lib\net46\ClosedXML.dll</HintPath>
+    </Reference>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.7.2.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
+      <HintPath>packages\DocumentFormat.OpenXml.2.7.2\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelNumberFormat, Version=1.0.10.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelNumberFormat.1.0.10\lib\net20\ExcelNumberFormat.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.14.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>packages\Google.Protobuf.3.14.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
     <Reference Include="LiveCharts, Version=0.9.7.0, Culture=neutral, PublicKeyToken=0bc1f845d1ebb8df, processorArchitecture=MSIL">
       <HintPath>packages\LiveCharts.0.9.7\lib\net45\LiveCharts.dll</HintPath>
     </Reference>
@@ -80,11 +104,49 @@
     <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=8.0.17.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.27\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="Renci.SshNet, Version=2016.1.0.0, Culture=neutral, PublicKeyToken=1cee9f8bde3db106, processorArchitecture=MSIL">
+      <HintPath>packages\SSH.NET.2016.1.0\lib\net40\Renci.SshNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Renci.SshNet.Async, Version=1.4.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Renci.SshNet.Async.1.4.0\lib\net40\Renci.SshNet.Async.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.FileSystem.Primitives.4.0.1\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Packaging, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.IO.Packaging.4.0.0\lib\net46\System.IO.Packaging.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -96,107 +158,53 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.27\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsBase" />
     <Reference Include="WindowsFormsIntegration" />
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>packages\MySql.Data.8.0.27\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Backend\Models\Sales_DateModel.cs" />
-    <Compile Include="Backend\Objects\Cart.cs" />
-    <Compile Include="Backend\Objects\CartContents.cs" />
-    <Compile Include="Backend\Objects\Database.cs" />
-    <Compile Include="Backend\Objects\FormHandler.cs" />
-    <Compile Include="Backend\Objects\Product.cs" />
-    <Compile Include="Backend\Objects\Sales.cs" />
-    <Compile Include="Backend\Objects\Stocks.cs" />
-    <Compile Include="Backend\Objects\User.cs" />
+    <Compile Include="Helpers\FormHandler.cs" />
     <Compile Include="Frontend\Custom Controls\AdvancedPanel.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Frontend\Custom Controls\Button_RoundCorners.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Frontend\Custom Controls\RoundedRectangle.cs" />
-    <Compile Include="Frontend\DialogBoxes\AddNewProductDialog.cs">
+    <Compile Include="Helpers\PageHandler.cs" />
+    <Compile Include="Frontend\MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frontend\DialogBoxes\AddNewProductDialog.Designer.cs">
-      <DependentUpon>AddNewProductDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\ChangePasswordDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\ChangePasswordDialog.Designer.cs">
-      <DependentUpon>ChangePasswordDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\CheckOutDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\CheckOutDialog.Designer.cs">
-      <DependentUpon>CheckOutDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\DeleteTransactionDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\DeleteTransactionDialog.Designer.cs">
-      <DependentUpon>DeleteTransactionDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\EditPersonalInformationDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\EditPersonalInformationDialog.Designer.cs">
-      <DependentUpon>EditPersonalInformationDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\EditProductInformationDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\EditProductInformationDialog.Designer.cs">
-      <DependentUpon>EditProductInformationDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\EditStocksDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\EditStocksDialog.Designer.cs">
-      <DependentUpon>EditStocksDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\ItemSummaryDialog.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\DialogBoxes\ItemSummaryDialog.Designer.cs">
-      <DependentUpon>ItemSummaryDialog.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Backend\Objects\PageHandler.cs" />
-    <Compile Include="Frontend\Form_AccountSettings.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\Form_AccountSettings.Designer.cs">
-      <DependentUpon>Form_AccountSettings.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\Form_Home.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\Form_Home.Designer.cs">
-      <DependentUpon>Form_Home.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\Form_MainInterface.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\Form_MainInterface.Designer.cs">
-      <DependentUpon>Form_MainInterface.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\Form_Products.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\Form_Products.Designer.cs">
-      <DependentUpon>Form_Products.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Frontend\Form_Sales.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Frontend\Form_Sales.Designer.cs">
-      <DependentUpon>Form_Sales.cs</DependentUpon>
+    <Compile Include="Frontend\MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Frontend\Form_SignIn.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Frontend\Form_SignIn.Designer.cs">
       <DependentUpon>Form_SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AccountView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\AccountView.Designer.cs">
+      <DependentUpon>AccountView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HomeView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\HomeView.Designer.cs">
+      <DependentUpon>HomeView.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -206,60 +214,121 @@
     <Compile Include="Frontend\Form_SignUp.Designer.cs">
       <DependentUpon>Form_SignUp.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Frontend\DialogBoxes\AddNewProductDialog.resx">
-      <DependentUpon>AddNewProductDialog.cs</DependentUpon>
+    <Compile Include="Views\Modals\Modal_AddToCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_AddToCart.Designer.cs">
+      <DependentUpon>Modal_AddToCart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_Delete.Designer.cs">
+      <DependentUpon>Modal_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_EditProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_EditProduct.Designer.cs">
+      <DependentUpon>Modal_EditProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_EditSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_EditSupplier.Designer.cs">
+      <DependentUpon>Modal_EditSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_NewProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_NewProduct.Designer.cs">
+      <DependentUpon>Modal_NewProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_NewSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_NewSupplier.Designer.cs">
+      <DependentUpon>Modal_NewSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_Payment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_Payment.Designer.cs">
+      <DependentUpon>Modal_Payment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_UpdateStocks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_UpdateStocks.Designer.cs">
+      <DependentUpon>Modal_UpdateStocks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ProductsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\ProductsView.Designer.cs">
+      <DependentUpon>ProductsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SalesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SalesView.Designer.cs">
+      <DependentUpon>SalesView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SuppliersView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Views\SuppliersView.Designer.cs">
+      <DependentUpon>SuppliersView.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Frontend\MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\DialogBoxes\ChangePasswordDialog.resx">
-      <DependentUpon>ChangePasswordDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\DialogBoxes\CheckOutDialog.resx">
-      <DependentUpon>CheckOutDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\DialogBoxes\DeleteTransactionDialog.resx">
-      <DependentUpon>DeleteTransactionDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\DialogBoxes\EditPersonalInformationDialog.resx">
-      <DependentUpon>EditPersonalInformationDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\DialogBoxes\EditProductInformationDialog.resx">
-      <DependentUpon>EditProductInformationDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\DialogBoxes\EditStocksDialog.resx">
-      <DependentUpon>EditStocksDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\Form_AccountSettings.resx">
-      <DependentUpon>Form_AccountSettings.cs</DependentUpon>
+    <EmbeddedResource Include="Views\HomeView.resx">
+      <DependentUpon>HomeView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <EmbeddedResource Include="Frontend\DialogBoxes\ItemSummaryDialog.resx">
-      <DependentUpon>ItemSummaryDialog.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\Form_Home.resx">
-      <DependentUpon>Form_Home.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\Form_MainInterface.resx">
-      <DependentUpon>Form_MainInterface.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\Form_Products.resx">
-      <DependentUpon>Form_Products.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\Form_Sales.resx">
-      <DependentUpon>Form_Sales.cs</DependentUpon>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Frontend\Form_SignIn.resx">
       <DependentUpon>Form_SignIn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frontend\Form_SignUp.resx">
       <DependentUpon>Form_SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modals\Modal_AddToCart.resx">
+      <DependentUpon>Modal_AddToCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modals\Modal_Delete.resx">
+      <DependentUpon>Modal_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modals\Modal_EditProduct.resx">
+      <DependentUpon>Modal_EditProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modals\Modal_EditSupplier.resx">
+      <DependentUpon>Modal_EditSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modals\Modal_NewProduct.resx">
+      <DependentUpon>Modal_NewProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modals\Modal_NewSupplier.resx">
+      <DependentUpon>Modal_NewSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modals\Modal_Payment.resx">
+      <DependentUpon>Modal_Payment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modals\Modal_UpdateStocks.resx">
+      <DependentUpon>Modal_UpdateStocks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\ProductsView.resx">
+      <DependentUpon>ProductsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SalesView.resx">
+      <DependentUpon>SalesView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\SuppliersView.resx">
+      <DependentUpon>SuppliersView.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\SMD_Water_Station.Backend.Objects.CartContents.datasource" />
@@ -278,78 +347,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Home White.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Viewlist White.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Trendingup White.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\More White.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Dashboard White.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ViewDay Black.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\ViewWeek Black.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\AddCircle Black.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\Delete Black.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\baseline_local_grocery_store_black_48dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\baseline_remove_circle_black_48dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\round_account_circle_black_48dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\NicePng_login-icon-png_1388174.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kisspng-yocale-logo-business-cards-sales-5ae5f67cc554d1.0431589215250202848083.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-search-256.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-search-100.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\round_cached_black_48dp.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\icons8-add-receipt-64.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\PinClipart.com_focus-clipart_1864110.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngwave.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\product-1.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pngwing.com.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clipart494368.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\clipart2178237.png" />
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
@@ -362,7 +359,21 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\outline_home_white_24dp.png" />
+    <None Include="Resources\outline_inventory_2_white_36dp.png" />
+    <None Include="Resources\outline_inventory_2_white_24dp.png" />
+    <None Include="Resources\outline_inventory_2_white_24dp1.png" />
+    <None Include="Resources\outline_manage_accounts_white_24dp.png" />
+    <None Include="Resources\outline_people_white_24dp.png" />
+    <None Include="Resources\outline_account_balance_wallet_white_24dp.png" />
     <Content Include="SMDLOGO.ico" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\..\Projects\POS &amp; Inventory System with Sales Management\Models\Models.csproj">
+      <Project>{f2dce0fd-2322-4941-963b-38203defe6a3}</Project>
+      <Name>Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

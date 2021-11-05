@@ -42,46 +42,153 @@ C:\Users\jayea\source\repos\SMD Water station\bin\Debug\SMD Water Station.applic
 C:\Users\jayea\source\repos\SMD Water station\obj\Debug\SMD Water Station.exe.manifest
 C:\Users\jayea\source\repos\SMD Water station\obj\Debug\SMD Water Station.application
 C:\Users\jayea\source\repos\SMD Water station\obj\Debug\SMD Water Station.csprojAssemblyReference.cache
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Frontend.DialogBoxes.AddNewProductDialog.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Frontend.DialogBoxes.ChangePasswordDialog.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Frontend.DialogBoxes.CheckOutDialog.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Frontend.DialogBoxes.DeleteTransactionDialog.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Frontend.DialogBoxes.EditPersonalInformationDialog.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Frontend.DialogBoxes.EditProductInformationDialog.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Frontend.DialogBoxes.EditStocksDialog.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Frontend.Form_AccountSettings.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Properties.Resources.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.ItemSummaryDialog.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Views.HomeView.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Views.MainInterfaceView.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Views.ProductsView.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Views.SalesView.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Signin.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD_Water_Station.Signup.resources
-E:\Projects\SMD Water Station\obj\Debug\SMD Water Station.csproj.GenerateResource.cache
-E:\Projects\SMD Water Station\obj\Debug\SMD Water Station.csproj.CoreCompileInputs.cache
-E:\Projects\SMD Water Station\obj\Debug\SMD Water Station.exe
-E:\Projects\SMD Water Station\obj\Debug\SMD Water Station.pdb
-E:\Projects\SMD Water Station\bin\Debug\SMD Water Station.exe.config
-E:\Projects\SMD Water Station\bin\Debug\SMD Water Station.exe.manifest
-E:\Projects\SMD Water Station\bin\Debug\SMD Water Station.application
-E:\Projects\SMD Water Station\bin\Debug\SMD Water Station.exe
-E:\Projects\SMD Water Station\bin\Debug\SMD Water Station.pdb
-E:\Projects\SMD Water Station\bin\Debug\LiveCharts.dll
-E:\Projects\SMD Water Station\bin\Debug\LiveCharts.WinForms.dll
-E:\Projects\SMD Water Station\bin\Debug\LiveCharts.Wpf.dll
-E:\Projects\SMD Water Station\bin\Debug\MaterialSkin.dll
-E:\Projects\SMD Water Station\bin\Debug\Google.Protobuf.dll
-E:\Projects\SMD Water Station\bin\Debug\Renci.SshNet.dll
-E:\Projects\SMD Water Station\bin\Debug\BouncyCastle.Crypto.dll
-E:\Projects\SMD Water Station\bin\Debug\LiveCharts.pdb
-E:\Projects\SMD Water Station\bin\Debug\LiveCharts.xml
-E:\Projects\SMD Water Station\bin\Debug\LiveCharts.WinForms.pdb
-E:\Projects\SMD Water Station\bin\Debug\LiveCharts.WinForms.xml
-E:\Projects\SMD Water Station\bin\Debug\LiveCharts.Wpf.pdb
-E:\Projects\SMD Water Station\bin\Debug\LiveCharts.Wpf.xml
-E:\Projects\SMD Water Station\bin\Debug\MySql.Data.xml
-E:\Projects\SMD Water Station\obj\Debug\SMD Water Station.exe.manifest
-E:\Projects\SMD Water Station\obj\Debug\SMD Water Station.application
-E:\Projects\SMD Water Station\obj\Debug\SMD Water Station.csproj.CopyComplete
-E:\Projects\SMD Water Station\obj\Debug\SMD Water Station.csproj.AssemblyReference.cache
+E:\Downloads\SMD Water Station\obj\Debug\SMD Water Station.csproj.AssemblyReference.cache
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Frontend.MainWindow.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Views.HomeView.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Signin.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Signup.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Views.Modals.Modal_Delete.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Views.Modals.Modal_EditProduct.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Views.Modals.Modal_NewProduct.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Views.Modals.Modal_UpdateStocks.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Views.ProductsView.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Views.SalesView.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Views.SuppliersView.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD Water Station.csproj.GenerateResource.cache
+E:\Downloads\SMD Water Station\bin\Debug\SMD Water Station.exe.config
+E:\Downloads\SMD Water Station\bin\Debug\SMD Water Station.exe.manifest
+E:\Downloads\SMD Water Station\bin\Debug\SMD Water Station.application
+E:\Downloads\SMD Water Station\bin\Debug\SMD Water Station.exe
+E:\Downloads\SMD Water Station\bin\Debug\SMD Water Station.pdb
+E:\Downloads\SMD Water Station\bin\Debug\LiveCharts.dll
+E:\Downloads\SMD Water Station\bin\Debug\LiveCharts.WinForms.dll
+E:\Downloads\SMD Water Station\bin\Debug\LiveCharts.Wpf.dll
+E:\Downloads\SMD Water Station\bin\Debug\MaterialSkin.dll
+E:\Downloads\SMD Water Station\bin\Debug\Models.dll
+E:\Downloads\SMD Water Station\bin\Debug\Renci.SshNet.Async.dll
+E:\Downloads\SMD Water Station\bin\Debug\Renci.SshNet.dll
+E:\Downloads\SMD Water Station\bin\Debug\MySql.Data.dll
+E:\Downloads\SMD Water Station\bin\Debug\Google.Protobuf.dll
+E:\Downloads\SMD Water Station\bin\Debug\ZstdNet.dll
+E:\Downloads\SMD Water Station\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\Downloads\SMD Water Station\bin\Debug\BouncyCastle.Crypto.dll
+E:\Downloads\SMD Water Station\bin\Debug\Ubiety.Dns.Core.dll
+E:\Downloads\SMD Water Station\bin\Debug\System.Memory.dll
+E:\Downloads\SMD Water Station\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Downloads\SMD Water Station\bin\Debug\System.Buffers.dll
+E:\Downloads\SMD Water Station\bin\Debug\K4os.Compression.LZ4.dll
+E:\Downloads\SMD Water Station\bin\Debug\K4os.Hash.xxHash.dll
+E:\Downloads\SMD Water Station\bin\Debug\System.Numerics.Vectors.dll
+E:\Downloads\SMD Water Station\bin\Debug\Models.pdb
+E:\Downloads\SMD Water Station\bin\Debug\Models.dll.config
+E:\Downloads\SMD Water Station\bin\Debug\LiveCharts.pdb
+E:\Downloads\SMD Water Station\bin\Debug\LiveCharts.xml
+E:\Downloads\SMD Water Station\bin\Debug\LiveCharts.WinForms.pdb
+E:\Downloads\SMD Water Station\bin\Debug\LiveCharts.WinForms.xml
+E:\Downloads\SMD Water Station\bin\Debug\LiveCharts.Wpf.pdb
+E:\Downloads\SMD Water Station\bin\Debug\LiveCharts.Wpf.xml
+E:\Downloads\SMD Water Station\bin\Debug\Renci.SshNet.xml
+E:\Downloads\SMD Water Station\bin\Debug\Renci.SshNet.Async.xml
+E:\Downloads\SMD Water Station\bin\Debug\MySql.Data.xml
+E:\Downloads\SMD Water Station\bin\Debug\Google.Protobuf.pdb
+E:\Downloads\SMD Water Station\bin\Debug\Google.Protobuf.xml
+E:\Downloads\SMD Water Station\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\Downloads\SMD Water Station\bin\Debug\System.Memory.xml
+E:\Downloads\SMD Water Station\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Downloads\SMD Water Station\bin\Debug\System.Buffers.xml
+E:\Downloads\SMD Water Station\bin\Debug\K4os.Compression.LZ4.xml
+E:\Downloads\SMD Water Station\bin\Debug\K4os.Hash.xxHash.xml
+E:\Downloads\SMD Water Station\bin\Debug\System.Numerics.Vectors.xml
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Properties.Resources.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD Water Station.csproj.CoreCompileInputs.cache
+E:\Downloads\SMD Water Station\obj\Debug\SMD Water Station.exe.manifest
+E:\Downloads\SMD Water Station\obj\Debug\SMD Water Station.application
+E:\Downloads\SMD Water Station\obj\Debug\SMD Water Station.exe
+E:\Downloads\SMD Water Station\obj\Debug\SMD Water Station.pdb
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Views.Modals.Modal_NewSupplier.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Views.Modals.Modal_EditSupplier.resources
+E:\Downloads\SMD Water Station\bin\Debug\ClosedXML.dll
+E:\Downloads\SMD Water Station\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Downloads\SMD Water Station\bin\Debug\ExcelNumberFormat.dll
+E:\Downloads\SMD Water Station\bin\Debug\System.IO.Packaging.dll
+E:\Downloads\SMD Water Station\bin\Debug\ClosedXML.pdb
+E:\Downloads\SMD Water Station\bin\Debug\ClosedXML.xml
+E:\Downloads\SMD Water Station\bin\Debug\DocumentFormat.OpenXml.xml
+E:\Downloads\SMD Water Station\bin\Debug\ExcelNumberFormat.xml
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Views.Modals.Modal_AddToCart.resources
+E:\Downloads\SMD Water Station\obj\Debug\SMD_Water_Station.Views.Modals.Modal_Payment.resources
+E:\Projects\SMD-POS\bin\Debug\SMD Water Station.exe.config
+E:\Projects\SMD-POS\bin\Debug\SMD Water Station.exe.manifest
+E:\Projects\SMD-POS\bin\Debug\SMD Water Station.application
+E:\Projects\SMD-POS\bin\Debug\SMD Water Station.exe
+E:\Projects\SMD-POS\bin\Debug\SMD Water Station.pdb
+E:\Projects\SMD-POS\bin\Debug\BouncyCastle.Crypto.dll
+E:\Projects\SMD-POS\bin\Debug\ClosedXML.dll
+E:\Projects\SMD-POS\bin\Debug\DocumentFormat.OpenXml.dll
+E:\Projects\SMD-POS\bin\Debug\ExcelNumberFormat.dll
+E:\Projects\SMD-POS\bin\Debug\Google.Protobuf.dll
+E:\Projects\SMD-POS\bin\Debug\K4os.Compression.LZ4.dll
+E:\Projects\SMD-POS\bin\Debug\K4os.Compression.LZ4.Streams.dll
+E:\Projects\SMD-POS\bin\Debug\K4os.Hash.xxHash.dll
+E:\Projects\SMD-POS\bin\Debug\LiveCharts.dll
+E:\Projects\SMD-POS\bin\Debug\LiveCharts.WinForms.dll
+E:\Projects\SMD-POS\bin\Debug\LiveCharts.Wpf.dll
+E:\Projects\SMD-POS\bin\Debug\MaterialSkin.dll
+E:\Projects\SMD-POS\bin\Debug\Models.dll
+E:\Projects\SMD-POS\bin\Debug\MySql.Data.dll
+E:\Projects\SMD-POS\bin\Debug\Renci.SshNet.Async.dll
+E:\Projects\SMD-POS\bin\Debug\Renci.SshNet.dll
+E:\Projects\SMD-POS\bin\Debug\System.Buffers.dll
+E:\Projects\SMD-POS\bin\Debug\System.IO.Packaging.dll
+E:\Projects\SMD-POS\bin\Debug\System.Memory.dll
+E:\Projects\SMD-POS\bin\Debug\System.Numerics.Vectors.dll
+E:\Projects\SMD-POS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+E:\Projects\SMD-POS\bin\Debug\Ubiety.Dns.Core.dll
+E:\Projects\SMD-POS\bin\Debug\ZstdNet.dll
+E:\Projects\SMD-POS\bin\Debug\Models.pdb
+E:\Projects\SMD-POS\bin\Debug\Models.dll.config
+E:\Projects\SMD-POS\bin\Debug\ClosedXML.pdb
+E:\Projects\SMD-POS\bin\Debug\ClosedXML.xml
+E:\Projects\SMD-POS\bin\Debug\DocumentFormat.OpenXml.xml
+E:\Projects\SMD-POS\bin\Debug\ExcelNumberFormat.xml
+E:\Projects\SMD-POS\bin\Debug\Google.Protobuf.pdb
+E:\Projects\SMD-POS\bin\Debug\Google.Protobuf.xml
+E:\Projects\SMD-POS\bin\Debug\K4os.Compression.LZ4.xml
+E:\Projects\SMD-POS\bin\Debug\K4os.Compression.LZ4.Streams.xml
+E:\Projects\SMD-POS\bin\Debug\K4os.Hash.xxHash.xml
+E:\Projects\SMD-POS\bin\Debug\LiveCharts.pdb
+E:\Projects\SMD-POS\bin\Debug\LiveCharts.xml
+E:\Projects\SMD-POS\bin\Debug\LiveCharts.WinForms.pdb
+E:\Projects\SMD-POS\bin\Debug\LiveCharts.WinForms.xml
+E:\Projects\SMD-POS\bin\Debug\LiveCharts.Wpf.pdb
+E:\Projects\SMD-POS\bin\Debug\LiveCharts.Wpf.xml
+E:\Projects\SMD-POS\bin\Debug\MySql.Data.xml
+E:\Projects\SMD-POS\bin\Debug\Renci.SshNet.xml
+E:\Projects\SMD-POS\bin\Debug\Renci.SshNet.Async.xml
+E:\Projects\SMD-POS\bin\Debug\System.Buffers.xml
+E:\Projects\SMD-POS\bin\Debug\System.Memory.xml
+E:\Projects\SMD-POS\bin\Debug\System.Numerics.Vectors.xml
+E:\Projects\SMD-POS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+E:\Projects\SMD-POS\obj\Debug\SMD Water Station.csproj.AssemblyReference.cache
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Frontend.MainWindow.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.HomeView.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Properties.Resources.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Signin.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Signup.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_AddToCart.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_Delete.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_EditProduct.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_EditSupplier.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_NewProduct.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_NewSupplier.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_Payment.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_UpdateStocks.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.ProductsView.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.SalesView.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.SuppliersView.resources
+E:\Projects\SMD-POS\obj\Debug\SMD Water Station.csproj.GenerateResource.cache
+E:\Projects\SMD-POS\obj\Debug\SMD Water Station.csproj.CoreCompileInputs.cache
+E:\Projects\SMD-POS\obj\Debug\SMD Water Station.exe.manifest
+E:\Projects\SMD-POS\obj\Debug\SMD Water Station.application
+E:\Projects\SMD-POS\obj\Debug\SMD Water Station.exe
+E:\Projects\SMD-POS\obj\Debug\SMD Water Station.pdb

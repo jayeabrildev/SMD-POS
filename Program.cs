@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
-
+using SMD_Water_Station.Frontend;
+using SMD_Water_Station.Helpers;
 namespace SMD_Water_Station
 {
     static class Program
@@ -15,8 +16,5 @@ namespace SMD_Water_Station
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(FormHandler.signIn);
         }
-
-
-
     }
 }

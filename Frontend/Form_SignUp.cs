@@ -1,8 +1,9 @@
-﻿using SMD_Water_Station.Classes;
+﻿using SMD_Water_Station.Helpers;
 using System;
 using System.Drawing;
 using System.Windows.Forms;
 
+using Models;
 namespace SMD_Water_Station
 {
     public partial class Signup : Form
@@ -23,7 +24,6 @@ namespace SMD_Water_Station
             Reset();
         }
 
-
         private void Signup_FormClosed(object sender, FormClosedEventArgs e)
         {
             FormHandler.signIn.Show();
@@ -31,24 +31,24 @@ namespace SMD_Water_Station
 
         private void Button_submit_Click(object sender, EventArgs e)
         {
-            if (Textbox_password.TextLength == 0 || Textbox_confirmPassword.TextLength == 0 ||
-                Textbox_firstname.TextLength == 0 || Textbox_surname.TextLength == 0 ||
-                Textbox_password.Text.Trim() == "" || Textbox_confirmPassword.Text.Trim() == "" ||
-                Textbox_firstname.Text.Trim() == "" || Textbox_surname.Text.Trim() == "")
+            if (textbox_password.TextLength == 0 || textbox_confirmPassword.TextLength == 0 ||
+                textbox_firstname.TextLength == 0 || textbox_surname.TextLength == 0 ||
+                textbox_password.Text.Trim() == "" || textbox_confirmPassword.Text.Trim() == "" ||
+                textbox_firstname.Text.Trim() == "" || textbox_surname.Text.Trim() == "")
             {
-                if (Textbox_password.TextLength == 0 || Textbox_password.Text.Trim() == "")
+                if (textbox_password.TextLength == 0 || textbox_password.Text.Trim() == "")
                 {
                     Header_Password.ForeColor = Color.Red;
                 }
-                if (Textbox_confirmPassword.TextLength == 0 || Textbox_confirmPassword.Text.Trim() == "")
+                if (textbox_confirmPassword.TextLength == 0 || textbox_confirmPassword.Text.Trim() == "")
                 {
                     Header_ConfirmPassword.ForeColor = Color.Red;
                 }
-                if (Textbox_firstname.TextLength == 0 || Textbox_firstname.Text.Trim() == "")
+                if (textbox_firstname.TextLength == 0 || textbox_firstname.Text.Trim() == "")
                 {
                     Header_Firstname.ForeColor = Color.Red;
                 }
-                if (Textbox_surname.TextLength == 0 || Textbox_surname.Text.Trim() == "")
+                if (textbox_surname.TextLength == 0 || textbox_surname.Text.Trim() == "")
                 {
                     Header_Surname.ForeColor = Color.Red;
                 }
@@ -56,7 +56,7 @@ namespace SMD_Water_Station
             }
             else
             {
-                if (Textbox_password.Text != Textbox_confirmPassword.Text)
+                if (textbox_password.Text != textbox_confirmPassword.Text)
                 {
                     Header_Password.ForeColor = Color.Red;
                     Header_ConfirmPassword.ForeColor = Color.Red;
@@ -64,12 +64,12 @@ namespace SMD_Water_Station
                 }
                 else
                 {
-                    User.newUserID = Label_newUserID.Text;
-                    User.newPassword = Textbox_confirmPassword.Text.Trim();
-                    User.newFirstname = Textbox_firstname.Text.TrimEnd();
-                    User.newSurname = Textbox_surname.Text.TrimEnd();
-
-                    User.Register();
+                    User user = new User();
+                    user.userId = Label_newUserID.Text;
+                    user.password = textbox_confirmPassword.Text.Trim();
+                    user.firstname = textbox_firstname.Text.TrimEnd();
+                    user.surname = textbox_surname.Text.TrimEnd();
+                    user.Register();
 
                     Reset();
 
@@ -80,7 +80,7 @@ namespace SMD_Water_Station
 
         private void Textbox_confirmPassword_TextChanged(object sender, EventArgs e)
         {
-            if (Textbox_password.Text != Textbox_confirmPassword.Text)
+            if (textbox_password.Text != textbox_confirmPassword.Text)
             {
                 Label_passwordCheck.Visible = true;
 
@@ -94,28 +94,35 @@ namespace SMD_Water_Station
         //Methods
         private void Reset()
         {
-            Textbox_password.Clear();
-            Textbox_confirmPassword.Clear();
-            Textbox_firstname.Clear();
-            Textbox_surname.Clear();
+            textbox_password.Clear();
+            textbox_confirmPassword.Clear();
+            textbox_firstname.Clear();
+            textbox_surname.Clear();
 
-            User.newUserID = null;
-            User.newPassword = null;
-            User.newFirstname = null;
-            User.newSurname = null;
-
-            var user = new User();
-            Label_newUserID.Text = user.NewUserID();
+            User user = new User();
+            Label_newUserID.Text = user.GenerateUserID();
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
             Header_Password.ForeColor = Color.DimGray;
             Header_ConfirmPassword.ForeColor = Color.DimGray;
             Header_Firstname.ForeColor = Color.DimGray;
             Header_Surname.ForeColor = Color.DimGray;
             timer1.Enabled = false;
+        }
+
+        private void CheckInputs()
+        {
+            if(textbox_firstname.Text.TrimEnd().Length == 0 || textbox_surname.Text.TrimEnd().Length == 0 || textbox_password.Text.TrimEnd().Length == 0
+                || textbox_confirmPassword.Text.TrimEnd().Length == 0)
+            {
+                button_submit.Enabled = false;
+            }
+            else
+            {
+                button_submit.Enabled = true;
+            }
         }
     }
 }
