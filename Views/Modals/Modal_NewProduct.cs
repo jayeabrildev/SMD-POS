@@ -33,11 +33,18 @@ namespace SMD_Water_Station.Views.Modals
         {
             Supplier supplier = new Supplier();
             DataTable suppliersTable = supplier.ListSuppliers();
+            if(suppliersTable.Rows.Count >= 1)
+            {
+                combobox_supplier.ValueMember = suppliersTable.Columns[0].ToString();
+                combobox_supplier.DisplayMember = suppliersTable.Columns[1].ToString();
 
-            combobox_supplier.ValueMember = suppliersTable.Columns[0].ToString();
-            combobox_supplier.DisplayMember = suppliersTable.Columns[1].ToString();
-
-            combobox_supplier.DataSource = suppliersTable;
+                combobox_supplier.DataSource = suppliersTable;
+                button_save.Enabled = true;
+            }
+            else
+            {
+                button_save.Enabled = false;
+            }
         }
 
         private void button_save_Click(object sender, EventArgs e)
@@ -68,14 +75,22 @@ namespace SMD_Water_Station.Views.Modals
 
         private void CheckInputs()
         {
-            if(textbox_sku.Text.Trim().Length == 0 || textbox_description.Text.Trim().Length == 0)
+            if(combobox_supplier.Items.Count >= 1)
             {
-                button_save.Enabled = false;
+                if (textbox_sku.Text.Trim().Length == 0 || textbox_description.Text.Trim().Length == 0)
+                {
+                    button_save.Enabled = false;
+                }
+                else
+                {
+                    button_save.Enabled = true;
+                }
             }
             else
             {
-                button_save.Enabled = true;
+                button_save.Enabled = false;
             }
+            
         }
 
         private void textbox_sku_TextChanged(object sender, EventArgs e)

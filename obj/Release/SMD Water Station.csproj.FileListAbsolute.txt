@@ -76,4 +76,3 @@ E:\Projects\SMD-POS\obj\Release\SMD Water Station.exe.manifest
 E:\Projects\SMD-POS\obj\Release\SMD Water Station.application
 E:\Projects\SMD-POS\obj\Release\SMD Water Station.exe
 E:\Projects\SMD-POS\obj\Release\SMD Water Station.pdb
-E:\Projects\SMD-POS\obj\Release\SMD Water Station.csproj.CopyComplete
