@@ -30,10 +30,10 @@ namespace SMD_Water_Station.Views.Modals
         private void InitializeComponent()
         {
             this.modalPanel = new BevelPanel.AdvancedPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.button_cancel = new System.Windows.Forms.Button();
             this.button_confirm = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.modalPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -56,11 +56,22 @@ namespace SMD_Water_Station.Views.Modals
             this.modalPanel.ShadowColor = System.Drawing.Color.DimGray;
             this.modalPanel.ShadowShift = 0;
             this.modalPanel.ShadowStyle = BevelPanel.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.modalPanel.Size = new System.Drawing.Size(435, 204);
+            this.modalPanel.Size = new System.Drawing.Size(310, 204);
             this.modalPanel.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.modalPanel.Style = BevelPanel.AdvancedPanel.BevelStyle.Flat;
             this.modalPanel.TabIndex = 13;
             this.modalPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.modalPanel_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(69, 79);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(173, 20);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "This Action is Irreversible";
             // 
             // button_cancel
             // 
@@ -69,9 +80,9 @@ namespace SMD_Water_Station.Views.Modals
             this.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_cancel.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_cancel.ForeColor = System.Drawing.Color.White;
-            this.button_cancel.Location = new System.Drawing.Point(226, 134);
+            this.button_cancel.Location = new System.Drawing.Point(167, 119);
             this.button_cancel.Name = "button_cancel";
-            this.button_cancel.Size = new System.Drawing.Size(140, 32);
+            this.button_cancel.Size = new System.Drawing.Size(120, 32);
             this.button_cancel.TabIndex = 15;
             this.button_cancel.Text = "Cancel";
             this.button_cancel.UseVisualStyleBackColor = false;
@@ -84,9 +95,9 @@ namespace SMD_Water_Station.Views.Modals
             this.button_confirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_confirm.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_confirm.ForeColor = System.Drawing.Color.White;
-            this.button_confirm.Location = new System.Drawing.Point(70, 134);
+            this.button_confirm.Location = new System.Drawing.Point(31, 119);
             this.button_confirm.Name = "button_confirm";
-            this.button_confirm.Size = new System.Drawing.Size(140, 32);
+            this.button_confirm.Size = new System.Drawing.Size(120, 32);
             this.button_confirm.TabIndex = 4;
             this.button_confirm.Text = "Confirm";
             this.button_confirm.UseVisualStyleBackColor = false;
@@ -95,30 +106,19 @@ namespace SMD_Water_Station.Views.Modals
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(152, 38);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(90, 51);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(137, 28);
+            this.label1.Size = new System.Drawing.Size(130, 28);
             this.label1.TabIndex = 3;
             this.label1.Text = "Are you sure?";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(122, 79);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(199, 23);
-            this.label2.TabIndex = 16;
-            this.label2.Text = "This Action is Irreversible";
             // 
             // Modal_Delete
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(435, 204);
+            this.ClientSize = new System.Drawing.Size(310, 204);
             this.Controls.Add(this.modalPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Modal_Delete";

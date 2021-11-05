@@ -45,12 +45,17 @@ namespace SMD_Water_Station.Views
             DisplayTodaySales();
             DisplayTotalSales();
 
-            dtp_start.MaxDate = sales.SetMaxDate();
-            dtp_end.MaxDate = sales.SetMaxDate();
-            dtp_start.MinDate = sales.SetMinimumDate();
-            dtp_end.MinDate = sales.SetMinimumDate();
+            if(sales.CountTotalTransactions() >= 1)
+            {
+                dtp_start.MaxDate = sales.SetMaxDate();
+                dtp_end.MaxDate = sales.SetMaxDate();
+                dtp_start.MinDate = sales.SetMinimumDate();
+                dtp_end.MinDate = sales.SetMinimumDate();
 
-            dtp_start.Value = dtp_start.MinDate;
+                dtp_start.Value = dtp_start.MinDate;
+            }
+
+            
         }
 
         private void dtp_start_ValueChanged(object sender, EventArgs e)

@@ -63,6 +63,16 @@ namespace SMD_Water_Station.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap baseline_logout_white_24dp {
+            get {
+                object obj = ResourceManager.GetObject("baseline_logout_white_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap outline_account_balance_wallet_white_24dp {
             get {
                 object obj = ResourceManager.GetObject("outline_account_balance_wallet_white_24dp", resourceCulture);
@@ -106,6 +116,26 @@ namespace SMD_Water_Station.Properties {
         internal static System.Drawing.Bitmap outline_manage_accounts_white_24dp {
             get {
                 object obj = ResourceManager.GetObject("outline_manage_accounts_white_24dp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SMDLOGO {
+            get {
+                object obj = ResourceManager.GetObject("SMDLOGO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap SMDLOGO_Large {
+            get {
+                object obj = ResourceManager.GetObject("SMDLOGO_Large", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

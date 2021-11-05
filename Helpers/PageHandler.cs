@@ -7,72 +7,78 @@ namespace SMD_Water_Station.Helpers
 {
     public class PageHandler
     {
-        UserControl currentView;
-        public static HomeView homeView;
-        public static ProductsView productsView;
-        public static SuppliersView suppliersView;
-        public static SalesView salesView;
-        public static AccountView accountView;
+        public HomeView homeView = new HomeView();
+        public ProductsView productsView;
+        public SuppliersView suppliersView;
+        public SalesView salesView;
+        public AccountView accountView;
+
+        public MainWindow mainwindow;
 
         public void Home()
         {
+            UserControl currentView = new UserControl();
             if (homeView == null)
             {
                 homeView = new HomeView();
             }
             currentView = homeView;
-            LoadToContainer();
+            LoadToContainer(mainwindow, currentView);
         }
 
         public void Products()
         {
+            UserControl currentView = new UserControl();
             currentView = null;
             if (productsView == null)
             {
                 productsView = new ProductsView();
             }
             currentView = productsView;
-            LoadToContainer();
+            LoadToContainer(mainwindow, currentView);
         }
 
         public void Suppliers()
         {
+            UserControl currentView = new UserControl();
             currentView = null;
             if(suppliersView == null)
             {
                 suppliersView = new SuppliersView();
             }
             currentView = suppliersView;
-            LoadToContainer();
+            LoadToContainer(mainwindow, currentView);
         }
 
         public void Sales()
         {
+            UserControl currentView = new UserControl();
             currentView = null;
             if (salesView == null)
             {
                 salesView = new SalesView();
             }
             currentView = salesView;
-            LoadToContainer();
+            LoadToContainer(mainwindow, currentView);
         }
 
         public void AccountSettings()
         {
+            UserControl currentView = new UserControl();
             currentView = null;
             if (accountView == null)
             {
                 accountView = new AccountView();
             }
             currentView = accountView;
-            LoadToContainer();
+            LoadToContainer(mainwindow, currentView);
         }
 
 
-        public void LoadToContainer()
+        public void LoadToContainer(MainWindow mainwindow, UserControl currentView)
         {
-            FormHandler.MainWindow.Panel_Content.Controls.Clear();
-            FormHandler.MainWindow.Panel_Content.Controls.Add(currentView);
+            mainwindow.Panel_Content.Controls.Clear();
+            mainwindow.Panel_Content.Controls.Add(currentView);
             currentView.Show();
         }
 

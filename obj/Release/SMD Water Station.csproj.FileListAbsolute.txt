@@ -1,0 +1,79 @@
+E:\Projects\SMD-POS\bin\Release\SMD Water Station.exe.config
+E:\Projects\SMD-POS\bin\Release\SMD Water Station.exe.manifest
+E:\Projects\SMD-POS\bin\Release\SMD Water Station.application
+E:\Projects\SMD-POS\bin\Release\SMD Water Station.exe
+E:\Projects\SMD-POS\bin\Release\SMD Water Station.pdb
+E:\Projects\SMD-POS\bin\Release\BouncyCastle.Crypto.dll
+E:\Projects\SMD-POS\bin\Release\ClosedXML.dll
+E:\Projects\SMD-POS\bin\Release\DocumentFormat.OpenXml.dll
+E:\Projects\SMD-POS\bin\Release\ExcelNumberFormat.dll
+E:\Projects\SMD-POS\bin\Release\Google.Protobuf.dll
+E:\Projects\SMD-POS\bin\Release\K4os.Compression.LZ4.dll
+E:\Projects\SMD-POS\bin\Release\K4os.Compression.LZ4.Streams.dll
+E:\Projects\SMD-POS\bin\Release\K4os.Hash.xxHash.dll
+E:\Projects\SMD-POS\bin\Release\LiveCharts.dll
+E:\Projects\SMD-POS\bin\Release\LiveCharts.WinForms.dll
+E:\Projects\SMD-POS\bin\Release\LiveCharts.Wpf.dll
+E:\Projects\SMD-POS\bin\Release\MaterialSkin.dll
+E:\Projects\SMD-POS\bin\Release\Models.dll
+E:\Projects\SMD-POS\bin\Release\MySql.Data.dll
+E:\Projects\SMD-POS\bin\Release\Renci.SshNet.Async.dll
+E:\Projects\SMD-POS\bin\Release\Renci.SshNet.dll
+E:\Projects\SMD-POS\bin\Release\System.Buffers.dll
+E:\Projects\SMD-POS\bin\Release\System.IO.Packaging.dll
+E:\Projects\SMD-POS\bin\Release\System.Memory.dll
+E:\Projects\SMD-POS\bin\Release\System.Numerics.Vectors.dll
+E:\Projects\SMD-POS\bin\Release\System.Runtime.CompilerServices.Unsafe.dll
+E:\Projects\SMD-POS\bin\Release\Ubiety.Dns.Core.dll
+E:\Projects\SMD-POS\bin\Release\ZstdNet.dll
+E:\Projects\SMD-POS\bin\Release\Models.pdb
+E:\Projects\SMD-POS\bin\Release\Models.dll.config
+E:\Projects\SMD-POS\bin\Release\ClosedXML.pdb
+E:\Projects\SMD-POS\bin\Release\ClosedXML.xml
+E:\Projects\SMD-POS\bin\Release\DocumentFormat.OpenXml.xml
+E:\Projects\SMD-POS\bin\Release\ExcelNumberFormat.xml
+E:\Projects\SMD-POS\bin\Release\Google.Protobuf.pdb
+E:\Projects\SMD-POS\bin\Release\Google.Protobuf.xml
+E:\Projects\SMD-POS\bin\Release\K4os.Compression.LZ4.xml
+E:\Projects\SMD-POS\bin\Release\K4os.Compression.LZ4.Streams.xml
+E:\Projects\SMD-POS\bin\Release\K4os.Hash.xxHash.xml
+E:\Projects\SMD-POS\bin\Release\LiveCharts.pdb
+E:\Projects\SMD-POS\bin\Release\LiveCharts.xml
+E:\Projects\SMD-POS\bin\Release\LiveCharts.WinForms.pdb
+E:\Projects\SMD-POS\bin\Release\LiveCharts.WinForms.xml
+E:\Projects\SMD-POS\bin\Release\LiveCharts.Wpf.pdb
+E:\Projects\SMD-POS\bin\Release\LiveCharts.Wpf.xml
+E:\Projects\SMD-POS\bin\Release\MySql.Data.xml
+E:\Projects\SMD-POS\bin\Release\Renci.SshNet.xml
+E:\Projects\SMD-POS\bin\Release\Renci.SshNet.Async.xml
+E:\Projects\SMD-POS\bin\Release\System.Buffers.xml
+E:\Projects\SMD-POS\bin\Release\System.Memory.xml
+E:\Projects\SMD-POS\bin\Release\System.Numerics.Vectors.xml
+E:\Projects\SMD-POS\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+E:\Projects\SMD-POS\obj\Release\SMD Water Station.csproj.AssemblyReference.cache
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Frontend.MainWindow.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.AccountView.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.HomeView.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Properties.Resources.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Signin.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Signup.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.Modals.Modal_AddToCart.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.Modals.Modal_ChangePassword.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.Modals.Modal_Delete.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.Modals.Modal_EditPersonal.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.Modals.Modal_EditProduct.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.Modals.Modal_EditSupplier.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.Modals.Modal_NewProduct.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.Modals.Modal_NewSupplier.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.Modals.Modal_Payment.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.Modals.Modal_UpdateStocks.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.ProductsView.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.SalesView.resources
+E:\Projects\SMD-POS\obj\Release\SMD_Water_Station.Views.SuppliersView.resources
+E:\Projects\SMD-POS\obj\Release\SMD Water Station.csproj.GenerateResource.cache
+E:\Projects\SMD-POS\obj\Release\SMD Water Station.csproj.CoreCompileInputs.cache
+E:\Projects\SMD-POS\obj\Release\SMD Water Station.exe.manifest
+E:\Projects\SMD-POS\obj\Release\SMD Water Station.application
+E:\Projects\SMD-POS\obj\Release\SMD Water Station.exe
+E:\Projects\SMD-POS\obj\Release\SMD Water Station.pdb
+E:\Projects\SMD-POS\obj\Release\SMD Water Station.csproj.CopyComplete

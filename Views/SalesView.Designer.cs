@@ -29,9 +29,9 @@ namespace SMD_Water_Station.Views
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button_editProduct = new System.Windows.Forms.Button();
             this.dtp_start = new System.Windows.Forms.DateTimePicker();
             this.dtp_end = new System.Windows.Forms.DateTimePicker();
@@ -40,7 +40,6 @@ namespace SMD_Water_Station.Views
             this.label_average = new System.Windows.Forms.Label();
             this.label_todaysales = new System.Windows.Forms.Label();
             this.label_sales = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label_totalsales = new System.Windows.Forms.Label();
@@ -51,6 +50,7 @@ namespace SMD_Water_Station.Views
             this.advancedPanel2 = new BevelPanel.AdvancedPanel();
             this.cartesian_sales = new LiveCharts.WinForms.CartesianChart();
             this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.advancedPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_sales)).BeginInit();
             this.advancedPanel2.SuspendLayout();
@@ -108,7 +108,7 @@ namespace SMD_Water_Station.Views
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(25, 110);
+            this.label9.Location = new System.Drawing.Point(25, 106);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(95, 19);
             this.label9.TabIndex = 7;
@@ -118,7 +118,7 @@ namespace SMD_Water_Station.Views
             // 
             this.label_average.AutoSize = true;
             this.label_average.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_average.Location = new System.Drawing.Point(23, 130);
+            this.label_average.Location = new System.Drawing.Point(23, 126);
             this.label_average.Name = "label_average";
             this.label_average.Size = new System.Drawing.Size(94, 25);
             this.label_average.TabIndex = 6;
@@ -128,7 +128,7 @@ namespace SMD_Water_Station.Views
             // 
             this.label_todaysales.AutoSize = true;
             this.label_todaysales.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_todaysales.Location = new System.Drawing.Point(23, 78);
+            this.label_todaysales.Location = new System.Drawing.Point(23, 74);
             this.label_todaysales.Name = "label_todaysales";
             this.label_todaysales.Size = new System.Drawing.Size(94, 25);
             this.label_todaysales.TabIndex = 5;
@@ -138,21 +138,11 @@ namespace SMD_Water_Station.Views
             // 
             this.label_sales.AutoSize = true;
             this.label_sales.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_sales.Location = new System.Drawing.Point(25, 58);
+            this.label_sales.Location = new System.Drawing.Point(25, 54);
             this.label_sales.Name = "label_sales";
             this.label_sales.Size = new System.Drawing.Size(46, 19);
             this.label_sales.TabIndex = 4;
             this.label_sales.Text = "Today";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 16);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(60, 28);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "Sales";
             // 
             // label4
             // 
@@ -169,7 +159,7 @@ namespace SMD_Water_Station.Views
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(25, 162);
+            this.label5.Location = new System.Drawing.Point(25, 158);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 19);
             this.label5.TabIndex = 32;
@@ -179,7 +169,7 @@ namespace SMD_Water_Station.Views
             // 
             this.label_totalsales.AutoSize = true;
             this.label_totalsales.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_totalsales.Location = new System.Drawing.Point(23, 182);
+            this.label_totalsales.Location = new System.Drawing.Point(23, 178);
             this.label_totalsales.Name = "label_totalsales";
             this.label_totalsales.Size = new System.Drawing.Size(94, 25);
             this.label_totalsales.TabIndex = 31;
@@ -242,23 +232,23 @@ namespace SMD_Water_Station.Views
             | System.Windows.Forms.AnchorStyles.Right)));
             this.datagrid_sales.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
             this.datagrid_sales.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_sales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_sales.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.datagrid_sales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagrid_sales.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagrid_sales.DefaultCellStyle = dataGridViewCellStyle8;
             this.datagrid_sales.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.datagrid_sales.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.datagrid_sales.Location = new System.Drawing.Point(14, 16);
@@ -268,8 +258,8 @@ namespace SMD_Water_Station.Views
             this.datagrid_sales.RowHeadersVisible = false;
             this.datagrid_sales.RowHeadersWidth = 51;
             this.datagrid_sales.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datagrid_sales.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datagrid_sales.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.datagrid_sales.RowTemplate.Height = 24;
             this.datagrid_sales.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagrid_sales.Size = new System.Drawing.Size(972, 330);
@@ -290,13 +280,13 @@ namespace SMD_Water_Station.Views
             this.advancedPanel2.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel2.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel2.ForeColor = System.Drawing.Color.White;
-            this.advancedPanel2.Location = new System.Drawing.Point(22, 433);
+            this.advancedPanel2.Location = new System.Drawing.Point(252, 433);
             this.advancedPanel2.Name = "advancedPanel2";
             this.advancedPanel2.RectRadius = 12;
             this.advancedPanel2.ShadowColor = System.Drawing.Color.DimGray;
             this.advancedPanel2.ShadowShift = 0;
             this.advancedPanel2.ShadowStyle = BevelPanel.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel2.Size = new System.Drawing.Size(1232, 262);
+            this.advancedPanel2.Size = new System.Drawing.Size(1002, 262);
             this.advancedPanel2.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel2.Style = BevelPanel.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel2.TabIndex = 25;
@@ -308,7 +298,7 @@ namespace SMD_Water_Station.Views
             this.cartesian_sales.Enabled = false;
             this.cartesian_sales.Location = new System.Drawing.Point(21, 40);
             this.cartesian_sales.Name = "cartesian_sales";
-            this.cartesian_sales.Size = new System.Drawing.Size(1186, 193);
+            this.cartesian_sales.Size = new System.Drawing.Size(956, 193);
             this.cartesian_sales.TabIndex = 5;
             this.cartesian_sales.Text = "cartesianChart1";
             // 
@@ -322,18 +312,28 @@ namespace SMD_Water_Station.Views
             this.label3.TabIndex = 4;
             this.label3.Text = "Monthly Overview";
             // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.BackgroundImage = global::SMD_Water_Station.Properties.Resources.SMDLOGO_Large;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(32, 473);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 200);
+            this.panel1.TabIndex = 35;
+            // 
             // SalesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.textbox_search);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label_totalsales);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label_todaysales);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label_sales);
@@ -369,7 +369,6 @@ namespace SMD_Water_Station.Views
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label_average;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label_totalsales;
@@ -378,5 +377,6 @@ namespace SMD_Water_Station.Views
         private BevelPanel.AdvancedPanel advancedPanel2;
         private System.Windows.Forms.TextBox textbox_search;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Panel panel1;
     }
 }

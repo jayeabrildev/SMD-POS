@@ -3,6 +3,8 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using Models;
+using SMD_Water_Station.Frontend;
+
 namespace SMD_Water_Station
 {
     public partial class Signin : Form
@@ -62,8 +64,8 @@ namespace SMD_Water_Station
                 User._userID = user.userId;
                 FormHandler.signIn.Hide();
                 FormHandler.signIn.Textbox_password.Clear();
-                FormHandler.ShowMaininterface();
-
+                MainWindow main = new MainWindow();
+                main.Show();
             }
             else
             {

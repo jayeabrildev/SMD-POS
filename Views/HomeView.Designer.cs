@@ -52,6 +52,8 @@ namespace SMD_Water_Station.Views
             this.datagrid_products = new System.Windows.Forms.DataGridView();
             this.textbox_search = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
             this.advancedPanel4.SuspendLayout();
             this.advancedPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_orders)).BeginInit();
@@ -63,7 +65,7 @@ namespace SMD_Water_Station.Views
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 13);
+            this.label2.Location = new System.Drawing.Point(14, 17);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(140, 20);
             this.label2.TabIndex = 7;
@@ -73,7 +75,7 @@ namespace SMD_Water_Station.Views
             // 
             this.label_referencenumber.AutoSize = true;
             this.label_referencenumber.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_referencenumber.Location = new System.Drawing.Point(24, 33);
+            this.label_referencenumber.Location = new System.Drawing.Point(14, 37);
             this.label_referencenumber.Name = "label_referencenumber";
             this.label_referencenumber.Size = new System.Drawing.Size(99, 20);
             this.label_referencenumber.TabIndex = 24;
@@ -120,7 +122,9 @@ namespace SMD_Water_Station.Views
             this.advancedPanel4.Controls.Add(this.label_totalItems);
             this.advancedPanel4.Controls.Add(this.label_total);
             this.advancedPanel4.Controls.Add(this.label7);
+            this.advancedPanel4.Controls.Add(this.label_referencenumber);
             this.advancedPanel4.Controls.Add(this.label6);
+            this.advancedPanel4.Controls.Add(this.label2);
             this.advancedPanel4.EdgeWidth = 1;
             this.advancedPanel4.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel4.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
@@ -131,7 +135,7 @@ namespace SMD_Water_Station.Views
             this.advancedPanel4.ShadowColor = System.Drawing.Color.DimGray;
             this.advancedPanel4.ShadowShift = 0;
             this.advancedPanel4.ShadowStyle = BevelPanel.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel4.Size = new System.Drawing.Size(452, 92);
+            this.advancedPanel4.Size = new System.Drawing.Size(452, 158);
             this.advancedPanel4.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel4.Style = BevelPanel.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel4.TabIndex = 24;
@@ -140,7 +144,7 @@ namespace SMD_Water_Station.Views
             // 
             this.label_totalItems.AutoSize = true;
             this.label_totalItems.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_totalItems.Location = new System.Drawing.Point(118, 47);
+            this.label_totalItems.Location = new System.Drawing.Point(118, 100);
             this.label_totalItems.Name = "label_totalItems";
             this.label_totalItems.Size = new System.Drawing.Size(18, 20);
             this.label_totalItems.TabIndex = 11;
@@ -150,7 +154,7 @@ namespace SMD_Water_Station.Views
             // 
             this.label_total.AutoSize = true;
             this.label_total.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_total.Location = new System.Drawing.Point(118, 19);
+            this.label_total.Location = new System.Drawing.Point(118, 72);
             this.label_total.Name = "label_total";
             this.label_total.Size = new System.Drawing.Size(44, 20);
             this.label_total.TabIndex = 10;
@@ -160,7 +164,7 @@ namespace SMD_Water_Station.Views
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(14, 19);
+            this.label7.Location = new System.Drawing.Point(14, 72);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(44, 20);
             this.label7.TabIndex = 9;
@@ -170,7 +174,7 @@ namespace SMD_Water_Station.Views
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(14, 47);
+            this.label6.Location = new System.Drawing.Point(14, 100);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(87, 20);
             this.label6.TabIndex = 8;
@@ -364,17 +368,36 @@ namespace SMD_Water_Station.Views
             this.label12.TabIndex = 3;
             this.label12.Text = "Search";
             // 
+            // panel1
+            // 
+            this.panel1.BackgroundImage = global::SMD_Water_Station.Properties.Resources.SMDLOGO;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(26, 15);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(40, 40);
+            this.panel1.TabIndex = 27;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(72, 27);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(204, 20);
+            this.label3.TabIndex = 25;
+            this.label3.Text = "SMD Water Refilling Station";
+            // 
             // HomeView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.advancedPanel4);
             this.Controls.Add(this.button_payment);
             this.Controls.Add(this.button_clearOrders);
-            this.Controls.Add(this.label_referencenumber);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.advancedPanel3);
             this.Controls.Add(this.advancedPanel2);
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -414,5 +437,7 @@ namespace SMD_Water_Station.Views
         private System.Windows.Forms.Label label_totalItems;
         private System.Windows.Forms.Label label_total;
         private System.Windows.Forms.Button button_refresh;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label3;
     }
 }

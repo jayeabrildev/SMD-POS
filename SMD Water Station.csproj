@@ -220,11 +220,23 @@
     <Compile Include="Views\Modals\Modal_AddToCart.Designer.cs">
       <DependentUpon>Modal_AddToCart.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Modals\Modal_ChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_ChangePassword.Designer.cs">
+      <DependentUpon>Modal_ChangePassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Modals\Modal_Delete.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Modals\Modal_Delete.Designer.cs">
       <DependentUpon>Modal_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_EditPersonal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_EditPersonal.Designer.cs">
+      <DependentUpon>Modal_EditPersonal.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Modals\Modal_EditProduct.cs">
       <SubType>Form</SubType>
@@ -283,6 +295,9 @@
     <EmbeddedResource Include="Frontend\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\AccountView.resx">
+      <DependentUpon>AccountView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\HomeView.resx">
       <DependentUpon>HomeView.cs</DependentUpon>
     </EmbeddedResource>
@@ -300,8 +315,14 @@
     <EmbeddedResource Include="Views\Modals\Modal_AddToCart.resx">
       <DependentUpon>Modal_AddToCart.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modals\Modal_ChangePassword.resx">
+      <DependentUpon>Modal_ChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Modals\Modal_Delete.resx">
       <DependentUpon>Modal_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modals\Modal_EditPersonal.resx">
+      <DependentUpon>Modal_EditPersonal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Modals\Modal_EditProduct.resx">
       <DependentUpon>Modal_EditProduct.cs</DependentUpon>
@@ -366,6 +387,9 @@
     <None Include="Resources\outline_manage_accounts_white_24dp.png" />
     <None Include="Resources\outline_people_white_24dp.png" />
     <None Include="Resources\outline_account_balance_wallet_white_24dp.png" />
+    <None Include="Resources\SMDLOGO.ico" />
+    <None Include="Resources\SMDLOGO_Large.png" />
+    <None Include="Resources\baseline_logout_white_24dp.png" />
     <Content Include="SMDLOGO.ico" />
   </ItemGroup>
   <ItemGroup />
