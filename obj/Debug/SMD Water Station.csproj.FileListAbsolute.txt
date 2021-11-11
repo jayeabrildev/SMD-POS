@@ -174,7 +174,6 @@ E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Frontend.MainWindow.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.HomeView.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Properties.Resources.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Signin.resources
-E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Signup.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_AddToCart.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_Delete.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_EditProduct.resources

@@ -29,9 +29,9 @@ namespace SMD_Water_Station.Views
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button_newProduct = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.advancedPanel3 = new BevelPanel.AdvancedPanel();
@@ -39,8 +39,6 @@ namespace SMD_Water_Station.Views
             this.button_updateStocks = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.advancedPanel1 = new BevelPanel.AdvancedPanel();
-            this.label_supplier = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label_price = new System.Windows.Forms.Label();
             this.label_description = new System.Windows.Forms.Label();
@@ -54,13 +52,18 @@ namespace SMD_Water_Station.Views
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.advancedPanel2 = new BevelPanel.AdvancedPanel();
+            this.checkbox_viewLowStocks = new System.Windows.Forms.CheckBox();
             this.textbox_search = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.datagrid_products = new System.Windows.Forms.DataGridView();
+            this.advancedPanel4 = new BevelPanel.AdvancedPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel1.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_products)).BeginInit();
+            this.advancedPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // button_newProduct
@@ -71,7 +74,7 @@ namespace SMD_Water_Station.Views
             this.button_newProduct.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_newProduct.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_newProduct.ForeColor = System.Drawing.Color.White;
-            this.button_newProduct.Location = new System.Drawing.Point(906, 514);
+            this.button_newProduct.Location = new System.Drawing.Point(907, 536);
             this.button_newProduct.Name = "button_newProduct";
             this.button_newProduct.Size = new System.Drawing.Size(363, 35);
             this.button_newProduct.TabIndex = 0;
@@ -101,7 +104,7 @@ namespace SMD_Water_Station.Views
             this.advancedPanel3.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel3.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel3.ForeColor = System.Drawing.Color.White;
-            this.advancedPanel3.Location = new System.Drawing.Point(910, 401);
+            this.advancedPanel3.Location = new System.Drawing.Point(907, 429);
             this.advancedPanel3.Name = "advancedPanel3";
             this.advancedPanel3.RectRadius = 12;
             this.advancedPanel3.ShadowColor = System.Drawing.Color.DimGray;
@@ -130,7 +133,7 @@ namespace SMD_Water_Station.Views
             this.button_updateStocks.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_updateStocks.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_updateStocks.ForeColor = System.Drawing.Color.White;
-            this.button_updateStocks.Location = new System.Drawing.Point(185, 27);
+            this.button_updateStocks.Location = new System.Drawing.Point(185, 28);
             this.button_updateStocks.Name = "button_updateStocks";
             this.button_updateStocks.Size = new System.Drawing.Size(157, 30);
             this.button_updateStocks.TabIndex = 15;
@@ -153,8 +156,6 @@ namespace SMD_Water_Station.Views
             this.advancedPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.advancedPanel1.BackColor = System.Drawing.Color.Transparent;
             this.advancedPanel1.BackgroundGradientMode = BevelPanel.AdvancedPanel.PanelGradientMode.Vertical;
-            this.advancedPanel1.Controls.Add(this.label_supplier);
-            this.advancedPanel1.Controls.Add(this.label14);
             this.advancedPanel1.Controls.Add(this.panel1);
             this.advancedPanel1.Controls.Add(this.label_price);
             this.advancedPanel1.Controls.Add(this.label_description);
@@ -171,36 +172,16 @@ namespace SMD_Water_Station.Views
             this.advancedPanel1.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel1.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel1.ForeColor = System.Drawing.Color.White;
-            this.advancedPanel1.Location = new System.Drawing.Point(910, 66);
+            this.advancedPanel1.Location = new System.Drawing.Point(907, 66);
             this.advancedPanel1.Name = "advancedPanel1";
             this.advancedPanel1.RectRadius = 12;
             this.advancedPanel1.ShadowColor = System.Drawing.Color.DimGray;
             this.advancedPanel1.ShadowShift = 0;
             this.advancedPanel1.ShadowStyle = BevelPanel.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel1.Size = new System.Drawing.Size(363, 313);
+            this.advancedPanel1.Size = new System.Drawing.Size(363, 265);
             this.advancedPanel1.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel1.Style = BevelPanel.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel1.TabIndex = 9;
-            // 
-            // label_supplier
-            // 
-            this.label_supplier.AutoSize = true;
-            this.label_supplier.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_supplier.Location = new System.Drawing.Point(18, 269);
-            this.label_supplier.Name = "label_supplier";
-            this.label_supplier.Size = new System.Drawing.Size(98, 19);
-            this.label_supplier.TabIndex = 21;
-            this.label_supplier.Text = "Supplier Name";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(15, 245);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(58, 19);
-            this.label14.TabIndex = 20;
-            this.label14.Text = "Supplier";
             // 
             // panel1
             // 
@@ -335,6 +316,7 @@ namespace SMD_Water_Station.Views
             | System.Windows.Forms.AnchorStyles.Right)));
             this.advancedPanel2.BackColor = System.Drawing.Color.Transparent;
             this.advancedPanel2.BackgroundGradientMode = BevelPanel.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel2.Controls.Add(this.checkbox_viewLowStocks);
             this.advancedPanel2.Controls.Add(this.textbox_search);
             this.advancedPanel2.Controls.Add(this.label12);
             this.advancedPanel2.Controls.Add(this.datagrid_products);
@@ -353,6 +335,19 @@ namespace SMD_Water_Station.Views
             this.advancedPanel2.Style = BevelPanel.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel2.TabIndex = 7;
             // 
+            // checkbox_viewLowStocks
+            // 
+            this.checkbox_viewLowStocks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkbox_viewLowStocks.AutoSize = true;
+            this.checkbox_viewLowStocks.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkbox_viewLowStocks.Location = new System.Drawing.Point(672, 14);
+            this.checkbox_viewLowStocks.Name = "checkbox_viewLowStocks";
+            this.checkbox_viewLowStocks.Size = new System.Drawing.Size(167, 24);
+            this.checkbox_viewLowStocks.TabIndex = 5;
+            this.checkbox_viewLowStocks.Text = "View low stocks only";
+            this.checkbox_viewLowStocks.UseVisualStyleBackColor = true;
+            this.checkbox_viewLowStocks.CheckedChanged += new System.EventHandler(this.checkbox_viewLowStocks_CheckedChanged);
+            // 
             // textbox_search
             // 
             this.textbox_search.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
@@ -361,7 +356,7 @@ namespace SMD_Water_Station.Views
             this.textbox_search.ForeColor = System.Drawing.Color.White;
             this.textbox_search.Location = new System.Drawing.Point(81, 20);
             this.textbox_search.Name = "textbox_search";
-            this.textbox_search.Size = new System.Drawing.Size(274, 24);
+            this.textbox_search.Size = new System.Drawing.Size(235, 24);
             this.textbox_search.TabIndex = 4;
             this.textbox_search.TextChanged += new System.EventHandler(this.textbox_search_TextChanged);
             // 
@@ -385,23 +380,23 @@ namespace SMD_Water_Station.Views
             | System.Windows.Forms.AnchorStyles.Right)));
             this.datagrid_products.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
             this.datagrid_products.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_products.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_products.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.datagrid_products.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagrid_products.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagrid_products.DefaultCellStyle = dataGridViewCellStyle35;
             this.datagrid_products.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.datagrid_products.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.datagrid_products.Location = new System.Drawing.Point(18, 51);
@@ -411,8 +406,8 @@ namespace SMD_Water_Station.Views
             this.datagrid_products.RowHeadersVisible = false;
             this.datagrid_products.RowHeadersWidth = 51;
             this.datagrid_products.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datagrid_products.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datagrid_products.RowsDefaultCellStyle = dataGridViewCellStyle36;
             this.datagrid_products.RowTemplate.Height = 24;
             this.datagrid_products.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagrid_products.Size = new System.Drawing.Size(821, 551);
@@ -420,11 +415,54 @@ namespace SMD_Water_Station.Views
             this.datagrid_products.VirtualMode = true;
             this.datagrid_products.RowEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_products_RowEnter);
             // 
+            // advancedPanel4
+            // 
+            this.advancedPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.advancedPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.advancedPanel4.BackgroundGradientMode = BevelPanel.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel4.Controls.Add(this.label3);
+            this.advancedPanel4.Controls.Add(this.label6);
+            this.advancedPanel4.EdgeWidth = 1;
+            this.advancedPanel4.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
+            this.advancedPanel4.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
+            this.advancedPanel4.ForeColor = System.Drawing.Color.White;
+            this.advancedPanel4.Location = new System.Drawing.Point(907, 352);
+            this.advancedPanel4.Name = "advancedPanel4";
+            this.advancedPanel4.RectRadius = 12;
+            this.advancedPanel4.ShadowColor = System.Drawing.Color.DimGray;
+            this.advancedPanel4.ShadowShift = 0;
+            this.advancedPanel4.ShadowStyle = BevelPanel.AdvancedPanel.ShadowMode.ForwardDiagonal;
+            this.advancedPanel4.Size = new System.Drawing.Size(363, 55);
+            this.advancedPanel4.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
+            this.advancedPanel4.Style = BevelPanel.AdvancedPanel.BevelStyle.Flat;
+            this.advancedPanel4.TabIndex = 24;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(297, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(45, 32);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "XX";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(15, 16);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(134, 19);
+            this.label6.TabIndex = 22;
+            this.label6.Text = "Low stocks products";
+            // 
             // ProductsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
+            this.Controls.Add(this.advancedPanel4);
             this.Controls.Add(this.advancedPanel3);
             this.Controls.Add(this.button_newProduct);
             this.Controls.Add(this.label2);
@@ -443,6 +481,8 @@ namespace SMD_Water_Station.Views
             this.advancedPanel2.ResumeLayout(false);
             this.advancedPanel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_products)).EndInit();
+            this.advancedPanel4.ResumeLayout(false);
+            this.advancedPanel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -468,12 +508,14 @@ namespace SMD_Water_Station.Views
         private System.Windows.Forms.Label label_sku;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox textbox_search;
-        private System.Windows.Forms.Label label_supplier;
-        private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Panel panel1;
         private BevelPanel.AdvancedPanel advancedPanel3;
         private System.Windows.Forms.Button button_updateStocks;
         private System.Windows.Forms.Label label_stocks;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.CheckBox checkbox_viewLowStocks;
+        private BevelPanel.AdvancedPanel advancedPanel4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label6;
     }
 }

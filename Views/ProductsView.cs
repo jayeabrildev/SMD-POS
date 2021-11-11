@@ -46,12 +46,42 @@ namespace SMD_Water_Station.Views
             datagrid_products.DataSource = productdBindingSource;
 
             datagrid_products.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
-            datagrid_products.Columns[4].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            datagrid_products.Columns[3].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
 
 
             typeof(DataGridView).InvokeMember("DoubleBuffered", BindingFlags.NonPublic |
             BindingFlags.Instance | BindingFlags.SetProperty, null,
             datagrid_products, new object[] { true });
+
+        }
+
+        private void DisplayLowStocks()
+        {
+            DataView dv = new DataView(productsTable);
+            dv.RowFilter = "Stocks <= 10"; // query example = "id = 10"
+            datagrid_products.DataSource = dv.ToTable();
+
+            switch (datagrid_products.Rows.Count)
+            {
+                case 0:
+                    button_editProduct.Enabled = false;
+                    button_deleteProduct.Enabled = false;
+                    button_updateStocks.Enabled = false;
+
+                    product.productID = null;
+
+                    label_sku.Text = "----------";
+                    label_description.Text = "----------";
+                    label_price.Text = "PHP 0.00";
+                    label_stocks.Text = "0";
+
+                    break;
+                default:
+                    button_editProduct.Enabled = true;
+                    button_deleteProduct.Enabled = true;
+                    button_updateStocks.Enabled = true;
+                    break;
+            }
 
         }
 
@@ -71,8 +101,6 @@ namespace SMD_Water_Station.Views
 
                 product.price = Convert.ToDouble(datagrid_products.Rows[e.RowIndex].Cells[3].Value.ToString());
 
-                supplier.supplierName = datagrid_products.Rows[e.RowIndex].Cells[4].Value.ToString();
-
                 selectedProduct = product.productID;
 
                 //Change label values
@@ -80,7 +108,6 @@ namespace SMD_Water_Station.Views
                 label_description.Text = product.description;
                 label_stocks.Text = stocks.quantity.ToString();
                 label_price.Text = "PHP " + product.price.ToString();
-                label_supplier.Text = supplier.supplierName.ToString();
 
                 button_editProduct.Enabled = true;
                 button_deleteProduct.Enabled = true;
@@ -113,7 +140,6 @@ namespace SMD_Water_Station.Views
                     label_description.Text = "----------";
                     label_price.Text = "PHP 0.00";
                     label_stocks.Text = "0";
-                    label_supplier.Text = "----------";
 
                     break;
                 default:
@@ -156,6 +182,19 @@ namespace SMD_Water_Station.Views
             delete.deleteMode = 0;
             delete.ShowDialog();
             FillTable();
+        }
+
+        private void checkbox_viewLowStocks_CheckedChanged(object sender, EventArgs e)
+        {
+            switch (checkbox_viewLowStocks.Checked)
+            {
+                case true:
+                    DisplayLowStocks();
+                    break;
+                case false:
+                    FillTable();
+                    break;
+            }
         }
     }
 }
