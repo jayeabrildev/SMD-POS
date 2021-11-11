@@ -9,18 +9,16 @@ namespace SMD_Water_Station
 {
     public partial class Signin : Form
     {
-
         public Signin()
         {
             InitializeComponent();
-
         }
 
         //Link: Sign up
         private void Link_Signup_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             FormHandler.signIn.Hide();
-            Signup signup = new Signup();
+            Form_signup_personal signup = new Form_signup_personal();
             signup.Show();
         }
 

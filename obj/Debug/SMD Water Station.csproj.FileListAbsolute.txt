@@ -195,4 +195,4 @@ E:\Projects\SMD-POS\obj\Debug\SMD Water Station.pdb
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.AccountView.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_EditPersonal.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_ChangePassword.resources
-E:\Projects\SMD-POS\obj\Debug\SMD Water Station.csproj.CopyComplete
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Frontend.Form_signup_personal.resources

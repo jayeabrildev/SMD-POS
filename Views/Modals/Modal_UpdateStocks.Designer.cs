@@ -108,10 +108,6 @@ namespace SMD_Water_Station.Views.Modals
             // 
             this.combobox_remarks.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combobox_remarks.FormattingEnabled = true;
-            this.combobox_remarks.Items.AddRange(new object[] {
-            "Correction",
-            "Item Loss/Damage",
-            "Re-stock"});
             this.combobox_remarks.Location = new System.Drawing.Point(94, 138);
             this.combobox_remarks.Name = "combobox_remarks";
             this.combobox_remarks.Size = new System.Drawing.Size(317, 25);

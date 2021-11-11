@@ -168,6 +168,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Frontend\Form_signup_personal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frontend\Form_signup_personal.Designer.cs">
+      <DependentUpon>Form_signup_personal.cs</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\FormHandler.cs" />
     <Compile Include="Frontend\Custom Controls\AdvancedPanel.cs">
       <SubType>Component</SubType>
@@ -208,11 +214,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Frontend\Form_SignUp.cs">
+    <Compile Include="Frontend\Form_signup_account.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Frontend\Form_SignUp.Designer.cs">
-      <DependentUpon>Form_SignUp.cs</DependentUpon>
+    <Compile Include="Frontend\Form_signup_account.Designer.cs">
+      <DependentUpon>Form_signup_account.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Modals\Modal_AddToCart.cs">
       <SubType>Form</SubType>
@@ -253,7 +259,7 @@
     <Compile Include="Views\Modals\Modal_NewProduct.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\Modals\Modal_NewProduct.Designer.cs">
+    <Compile Include="Views\Modals\Modal_NewProduct.designer.cs">
       <DependentUpon>Modal_NewProduct.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Modals\Modal_NewSupplier.cs">
@@ -292,6 +298,9 @@
     <Compile Include="Views\SuppliersView.Designer.cs">
       <DependentUpon>SuppliersView.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Frontend\Form_signup_personal.resx">
+      <DependentUpon>Form_signup_personal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Frontend\MainWindow.resx">
       <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -309,8 +318,8 @@
     <EmbeddedResource Include="Frontend\Form_SignIn.resx">
       <DependentUpon>Form_SignIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Frontend\Form_SignUp.resx">
-      <DependentUpon>Form_SignUp.cs</DependentUpon>
+    <EmbeddedResource Include="Frontend\Form_signup_account.resx">
+      <DependentUpon>Form_signup_account.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Modals\Modal_AddToCart.resx">
       <DependentUpon>Modal_AddToCart.cs</DependentUpon>

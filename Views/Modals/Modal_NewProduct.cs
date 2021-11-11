@@ -31,20 +31,7 @@ namespace SMD_Water_Station.Views.Modals
 
         private void Modal_NewProduct_Load(object sender, EventArgs e)
         {
-            Supplier supplier = new Supplier();
-            DataTable suppliersTable = supplier.ListSuppliers();
-            if(suppliersTable.Rows.Count >= 1)
-            {
-                combobox_supplier.ValueMember = suppliersTable.Columns[0].ToString();
-                combobox_supplier.DisplayMember = suppliersTable.Columns[1].ToString();
-
-                combobox_supplier.DataSource = suppliersTable;
-                button_save.Enabled = true;
-            }
-            else
-            {
-                button_save.Enabled = false;
-            }
+           
         }
 
         private void button_save_Click(object sender, EventArgs e)
@@ -59,7 +46,6 @@ namespace SMD_Water_Station.Views.Modals
                     product.productID = textbox_sku.Text.Trim();
                     product.description = textbox_description.Text.TrimEnd();
                     product.price = Convert.ToInt32(nud_price.Value);
-                    product.supplierID = Convert.ToInt32(combobox_supplier.SelectedValue.ToString());
 
                     Stocks stocks = new Stocks();
                     stocks.productID = product.productID;
@@ -73,29 +59,16 @@ namespace SMD_Water_Station.Views.Modals
             
         }
 
-        private void CheckInputs()
+        private void textbox_sku_TextChanged(object sender, EventArgs e)
         {
-            if(combobox_supplier.Items.Count >= 1)
-            {
-                if (textbox_sku.Text.Trim().Length == 0 || textbox_description.Text.Trim().Length == 0)
-                {
-                    button_save.Enabled = false;
-                }
-                else
-                {
-                    button_save.Enabled = true;
-                }
-            }
-            else
+            if (textbox_sku.Text.Trim().Length == 0 || textbox_description.Text.Trim().Length == 0)
             {
                 button_save.Enabled = false;
             }
-            
-        }
-
-        private void textbox_sku_TextChanged(object sender, EventArgs e)
-        {
-            CheckInputs();
+            else
+            {
+                button_save.Enabled = true;
+            }
         }
     }
 }

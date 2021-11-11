@@ -33,9 +33,9 @@ namespace SMD_Water_Station.Views.Modals
 
             label_product.Text = product.description;
             label_currentStocks.Text = stocks.LoadStocks(ProductsView.selectedProduct).ToString();
-            
-            
-            combobox_remarks.SelectedIndex = 0;
+
+
+            FillCombobox();
         }
 
         private void button_save_Click(object sender, EventArgs e)
@@ -53,14 +53,43 @@ namespace SMD_Water_Station.Views.Modals
 
         private void rb_deduct_CheckedChanged(object sender, EventArgs e)
         {
+            FillCombobox();
             nud_quantity.Value = nud_quantity.Minimum;
             nud_quantity.Maximum = stocks.LoadStocks(ProductsView.selectedProduct);
+            if(nud_quantity.Maximum <= 0)
+            {
+                button_save.Enabled = false;
+            }
+            else
+            {
+                button_save.Enabled = true;
+            }
         }
 
         private void rb_add_CheckedChanged(object sender, EventArgs e)
         {
+            FillCombobox();
+            nud_quantity.Maximum = 999999;
+            nud_quantity.Minimum = 1;
             nud_quantity.Value = nud_quantity.Minimum;
-            nud_quantity.Maximum = 9999;
+            button_save.Enabled = true;
         }
+
+        private void FillCombobox()
+        {
+            combobox_remarks.Items.Clear();
+            if (rb_add.Checked == true)
+            {
+                combobox_remarks.Items.Add("Restock");
+                combobox_remarks.Items.Add("Correction/Adjustment");
+            }
+            else if(rb_deduct.Checked == true) 
+            {
+                combobox_remarks.Items.Add("Damaged item(s)");
+                combobox_remarks.Items.Add("Lost item");
+            }
+            combobox_remarks.SelectedIndex = 1;
+        }
+
     }
 }

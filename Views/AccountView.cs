@@ -41,7 +41,7 @@ namespace SMD_Water_Station.Views
 
         private void LoadAccount()
         {
-            user.GetFullname();
+            user.GetUserInfo();
             label_firstname.Text = user.firstname;
             label_lastname.Text = user.surname;
             label_accountID.Text = User._userID;
