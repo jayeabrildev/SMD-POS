@@ -36,6 +36,8 @@ namespace SMD_Water_Station.Views.Modals
             this.label4 = new System.Windows.Forms.Label();
             this.button_confirm = new System.Windows.Forms.Button();
             this.button_cancel = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label_change = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.nud_amounttendered)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,11 +53,12 @@ namespace SMD_Water_Station.Views.Modals
             // 
             // label_total
             // 
+            this.label_total.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label_total.AutoSize = true;
-            this.label_total.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_total.Location = new System.Drawing.Point(108, 84);
+            this.label_total.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_total.Location = new System.Drawing.Point(292, 88);
             this.label_total.Name = "label_total";
-            this.label_total.Size = new System.Drawing.Size(81, 38);
+            this.label_total.Size = new System.Drawing.Size(59, 28);
             this.label_total.TabIndex = 1;
             this.label_total.Text = "Total";
             // 
@@ -74,7 +77,7 @@ namespace SMD_Water_Station.Views.Modals
             // 
             this.nud_amounttendered.DecimalPlaces = 2;
             this.nud_amounttendered.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nud_amounttendered.Location = new System.Drawing.Point(236, 141);
+            this.nud_amounttendered.Location = new System.Drawing.Point(236, 131);
             this.nud_amounttendered.Maximum = new decimal(new int[] {
             999999,
             0,
@@ -99,7 +102,7 @@ namespace SMD_Water_Station.Views.Modals
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(43, 143);
+            this.label4.Location = new System.Drawing.Point(43, 133);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(181, 28);
             this.label4.TabIndex = 4;
@@ -115,7 +118,7 @@ namespace SMD_Water_Station.Views.Modals
             this.button_confirm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_confirm.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_confirm.ForeColor = System.Drawing.Color.White;
-            this.button_confirm.Location = new System.Drawing.Point(48, 211);
+            this.button_confirm.Location = new System.Drawing.Point(48, 252);
             this.button_confirm.Name = "button_confirm";
             this.button_confirm.Size = new System.Drawing.Size(319, 32);
             this.button_confirm.TabIndex = 27;
@@ -131,19 +134,43 @@ namespace SMD_Water_Station.Views.Modals
             this.button_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_cancel.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_cancel.ForeColor = System.Drawing.Color.White;
-            this.button_cancel.Location = new System.Drawing.Point(48, 259);
+            this.button_cancel.Location = new System.Drawing.Point(48, 300);
             this.button_cancel.Name = "button_cancel";
             this.button_cancel.Size = new System.Drawing.Size(319, 32);
             this.button_cancel.TabIndex = 28;
             this.button_cancel.Text = "Cancel";
             this.button_cancel.UseVisualStyleBackColor = false;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(43, 183);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(82, 28);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "Change";
+            // 
+            // label_change
+            // 
+            this.label_change.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_change.AutoSize = true;
+            this.label_change.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_change.Location = new System.Drawing.Point(292, 183);
+            this.label_change.Name = "label_change";
+            this.label_change.Size = new System.Drawing.Size(82, 28);
+            this.label_change.TabIndex = 30;
+            this.label_change.Text = "Change";
+            this.label_change.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Modal_Payment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
-            this.ClientSize = new System.Drawing.Size(416, 322);
+            this.ClientSize = new System.Drawing.Size(416, 379);
+            this.Controls.Add(this.label_change);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.button_cancel);
             this.Controls.Add(this.button_confirm);
             this.Controls.Add(this.label4);
@@ -173,5 +200,7 @@ namespace SMD_Water_Station.Views.Modals
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button_confirm;
         private System.Windows.Forms.Button button_cancel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label_change;
     }
 }

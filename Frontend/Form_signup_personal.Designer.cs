@@ -29,7 +29,6 @@ namespace SMD_Water_Station.Frontend
         /// </summary>
         private void InitializeComponent()
         {
-            this.label6 = new System.Windows.Forms.Label();
             this.textbox_email = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textbox_contact = new System.Windows.Forms.TextBox();
@@ -61,17 +60,6 @@ namespace SMD_Water_Station.Frontend
             this.panel_accountdetails.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(25, 223);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(35, 19);
-            this.label6.TabIndex = 55;
-            this.label6.Text = "+63";
-            // 
             // textbox_email
             // 
             this.textbox_email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
@@ -101,10 +89,10 @@ namespace SMD_Water_Station.Frontend
             this.textbox_contact.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textbox_contact.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textbox_contact.ForeColor = System.Drawing.Color.White;
-            this.textbox_contact.Location = new System.Drawing.Point(61, 222);
-            this.textbox_contact.MaxLength = 10;
+            this.textbox_contact.Location = new System.Drawing.Point(28, 222);
+            this.textbox_contact.MaxLength = 11;
             this.textbox_contact.Name = "textbox_contact";
-            this.textbox_contact.Size = new System.Drawing.Size(186, 23);
+            this.textbox_contact.Size = new System.Drawing.Size(219, 23);
             this.textbox_contact.TabIndex = 52;
             this.textbox_contact.TextChanged += new System.EventHandler(this.textbox_firstname_TextChanged);
             this.textbox_contact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_contact_KeyPress);
@@ -237,7 +225,6 @@ namespace SMD_Water_Station.Frontend
             this.panel_personaldetails.Controls.Add(this.Header_Surname);
             this.panel_personaldetails.Controls.Add(this.textbox_firstname);
             this.panel_personaldetails.Controls.Add(this.textbox_surname);
-            this.panel_personaldetails.Controls.Add(this.label6);
             this.panel_personaldetails.Controls.Add(this.label3);
             this.panel_personaldetails.Controls.Add(this.textbox_email);
             this.panel_personaldetails.Controls.Add(this.textbox_address);
@@ -443,8 +430,6 @@ namespace SMD_Water_Station.Frontend
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textbox_email;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textbox_contact;

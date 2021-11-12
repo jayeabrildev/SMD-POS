@@ -40,7 +40,7 @@ namespace SMD_Water_Station.Views
         {
             textbox_search.Clear();
             Product product = new Product();
-            productsTable = await Task.Run(() => product.ListProducts());
+            productsTable = await Task.Run(() => product.ListProducts(2));
 
             productdBindingSource.DataSource = productsTable;
             datagrid_products.DataSource = productdBindingSource;

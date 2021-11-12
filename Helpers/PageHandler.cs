@@ -9,7 +9,7 @@ namespace SMD_Water_Station.Helpers
     {
         public HomeView homeView = new HomeView();
         public ProductsView productsView;
-        public SuppliersView suppliersView;
+        public MaterialsView suppliersView;
         public SalesView salesView;
         public AccountView accountView;
 
@@ -44,7 +44,7 @@ namespace SMD_Water_Station.Helpers
             currentView = null;
             if(suppliersView == null)
             {
-                suppliersView = new SuppliersView();
+                suppliersView = new MaterialsView();
             }
             currentView = suppliersView;
             LoadToContainer(mainwindow, currentView);

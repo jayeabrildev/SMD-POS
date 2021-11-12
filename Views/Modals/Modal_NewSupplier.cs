@@ -25,29 +25,65 @@ namespace SMD_Water_Station.Views.Modals
 
         private void textbox_supplier_TextChanged(object sender, EventArgs e)
         {
-            switch (textbox_supplier.Text.TrimEnd().Length)
-            {
-                case 0:
-                    button_save.Enabled = false;
-                    break;
-                default:
-                    button_save.Enabled = true;
-                    break;
-            }
+            CheckForEmpty();
         }
 
         private void button_save_Click(object sender, EventArgs e)
         {
             try
             {
+                string suppliername = textbox_supplier.Text.TrimEnd();
+                string address = textbox_address.Text.TrimEnd();
+                string contact = textbox_contact.Text.TrimEnd();
+                string email = textbox_email.Text.TrimEnd();
                 Supplier supplier = new Supplier();
-                supplier.NewSupplier(textbox_supplier.Text.TrimEnd());
+                supplier.NewSupplier(suppliername, address, contact, email);
             }
             catch (Exception)
             {
                 throw;
             }
             this.Close();
+        }
+
+        private void textbox_contact_TextChanged(object sender, EventArgs e)
+        {
+            CheckForEmpty();
+        }
+
+        private void textbox_address_TextChanged(object sender, EventArgs e)
+        {
+            CheckForEmpty();
+        }
+
+        private void textbox_email_TextChanged(object sender, EventArgs e)
+        {
+            CheckForEmpty();
+        }
+        
+        private void CheckForEmpty()
+        {
+            TextBox[] textboxes = { textbox_supplier, textbox_address, textbox_contact, textbox_email };
+            foreach (TextBox textbox in textboxes)
+            {
+                if (textbox.Text.Length == 0 || textbox.Text.TrimEnd() == "")
+                {
+                    button_save.Enabled = false;
+                }
+                else
+                {
+                    button_save.Enabled = true;
+                }
+            }
+        }
+
+        private void textbox_contact_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            // Verify that the pressed key isn't CTRL or any non-numeric digit
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

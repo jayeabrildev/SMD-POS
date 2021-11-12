@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,7 +27,9 @@ namespace SMD_Water_Station.Views.Modals
 
         private void Modal_Payment_Load(object sender, EventArgs e)
         {
-            label_total.Text = total.ToString("0.00");
+            double change = 0;
+            label_total.Text = total.ToString("C", CultureInfo.GetCultureInfo("en-PH"));
+            label_change.Text = change.ToString("C", CultureInfo.GetCultureInfo("en-PH"));
         }
 
         private void button_confirm_Click(object sender, EventArgs e)
@@ -37,12 +40,15 @@ namespace SMD_Water_Station.Views.Modals
         private void nud_amounttendered_ValueChanged(object sender, EventArgs e)
         {
             double amountTendered = Convert.ToDouble(nud_amounttendered.Value);
-            if(amountTendered < total)
+            if (amountTendered < total)
             {
+                MessageBox.Show("The amount you entered is not enough.", "Error");
                 button_confirm.Enabled = false;
             }
             else
             {
+                double change = amountTendered - total;
+                label_change.Text = change.ToString("C", CultureInfo.GetCultureInfo("en-PH"));
                 button_confirm.Enabled = true;
             }
         }

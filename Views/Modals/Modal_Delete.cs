@@ -35,8 +35,8 @@ namespace SMD_Water_Station.Views.Modals
                         product.DeleteProduct(ProductsView.selectedProduct);
                         break;
                     case 1:
-                        Supplier supplier = new Supplier();
-                        supplier.DeleteSupplier(SuppliersView.selectedSupplier);
+                        Raw_Material rawMaterial = new Raw_Material();
+                        rawMaterial.DeleteMaterial(MaterialsView.selectedMaterial);
                         break;
                     case 2:
                         Sales sales = new Sales();

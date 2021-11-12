@@ -163,7 +163,6 @@ namespace SMD_Water_Station.Views
             payment.ShowDialog();
             if(payment.DialogResult == DialogResult.OK)
             {
-                
                 List<Cart> cartList = cartbindingList.ToList();
                 foreach (var item in cartList)
                 {
@@ -197,14 +196,13 @@ namespace SMD_Water_Station.Views
 
             cartProducts.Clear();
 
-            //List the products from the database to datagrid
-            productsTable = await Task.Run(() => product.ListProducts());
+            //List the products from the database to datagrid (Not including products with low stocks)
+            productsTable = await Task.Run(() => product.ListProducts(0));
             productBindingSource.DataSource = productsTable;
 
             datagrid_products.DataSource = productBindingSource;
             datagrid_products.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
             datagrid_products.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            datagrid_products.Columns[4].Visible = false;
 
             typeof(DataGridView).InvokeMember("DoubleBuffered", BindingFlags.NonPublic |
             BindingFlags.Instance | BindingFlags.SetProperty, null,
@@ -247,30 +245,6 @@ namespace SMD_Water_Station.Views
 
             label_totalItems.Text = cartbindingList.Count().ToString();
         }
-        
-        private double ComputeTotal()
-        {
-            List<Cart> cartList = cartbindingList.ToList();
-            double totalPrice = 0;
-            foreach (var existingItem in cartList)
-            {
-                totalPrice += existingItem.SubTotal;
-            }
-            source.ResetBindings(false);
-            return totalPrice;
-        }
-
-        private void Validate()
-        {
-            if(datagrid_orders.Rows.Count <= 0)
-            {
-                button_payment.Enabled = false;
-            }
-            else
-            {
-                button_payment.Enabled = true;
-            }
-        }
 
         private void textbox_search_TextChanged(object sender, EventArgs e)
         {
@@ -285,11 +259,10 @@ namespace SMD_Water_Station.Views
             textbox_search.Clear();
 
             datagrid_products.DataSource = null;
-
             datagrid_products.Columns.Clear();
 
             //List the products from the database to datagrid
-            productsTable = await Task.Run(() => product.ListProducts());
+            productsTable = await Task.Run(() => product.ListProducts(0));
             productBindingSource.DataSource = productsTable;
 
             datagrid_products.DataSource = productBindingSource;
@@ -309,6 +282,67 @@ namespace SMD_Water_Station.Views
             addButton.Name = "AddToCart";
             addButton.FlatStyle = FlatStyle.Flat;
             addButton.UseColumnTextForButtonValue = true;
+        }
+
+        private async void checkbox_viewLowStocks_CheckedChanged(object sender, EventArgs e)
+        {
+            datagrid_products.DataSource = null;
+            datagrid_products.Columns.Clear();
+            //List the products from the database to datagrid
+
+            switch (checkbox_viewLowStocks.Checked)
+            {
+                case true:
+                    productsTable = await Task.Run(() => product.ListProducts(1));
+                    break;
+                case false:
+                    productsTable = await Task.Run(() => product.ListProducts(0));
+                    break;
+            }
+           
+            productBindingSource.DataSource = productsTable;
+
+            datagrid_products.DataSource = productBindingSource;
+            datagrid_products.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
+            datagrid_products.Columns[1].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+
+            typeof(DataGridView).InvokeMember("DoubleBuffered", BindingFlags.NonPublic |
+            BindingFlags.Instance | BindingFlags.SetProperty, null,
+            datagrid_products, new object[] { true });
+
+            //Add to Cart Button
+            DataGridViewButtonColumn addButton = new DataGridViewButtonColumn();
+            datagrid_products.Columns.Add(addButton);
+            addButton.HeaderText = "Option";
+            addButton.Text = "Add";
+            addButton.Name = "AddToCart";
+            addButton.FlatStyle = FlatStyle.Flat;
+            addButton.UseColumnTextForButtonValue = true;
+        }
+        
+        //Functions
+        private double ComputeTotal()
+        {
+            List<Cart> cartList = cartbindingList.ToList();
+            double totalPrice = 0;
+            foreach (var existingItem in cartList)
+            {
+                totalPrice += existingItem.SubTotal;
+            }
+            source.ResetBindings(false);
+            return totalPrice;
+        }
+        
+        private void Validate()
+        {
+            if(datagrid_orders.Rows.Count <= 0)
+            {
+                button_payment.Enabled = false;
+            }
+            else
+            {
+                button_payment.Enabled = true;
+            }
         }
     }
 }

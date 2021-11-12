@@ -187,14 +187,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Models.dll" size="22528">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Models.dll" size="28160">
       <assemblyIdentity name="Models" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>R5YzKY97JY0rudgCquEG2Q+aYHQIL/nn+4s9qhdsq7E=</dsig:DigestValue>
+        <dsig:DigestValue>ruhLp2QGSAQ94MvPeKz1df8ytmJ5RUtnjQLOMcsCOyE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -235,14 +235,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SMD Water Station.exe" size="413184">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SMD Water Station.exe" size="443392">
       <assemblyIdentity name="SMD Water Station" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>P5PijoSmqn4lgdC9BkqcuNADWu6RFonzmqiDAU5HREg=</dsig:DigestValue>
+        <dsig:DigestValue>RPJVCKi5dv13M8RdoGPKzSFaFc5BFQHYA6gaRM23YFQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

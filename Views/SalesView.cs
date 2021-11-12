@@ -73,6 +73,37 @@ namespace SMD_Water_Station.Views
             ExportToExcel();
         }
 
+        private void datagrid_sales_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (datagrid_sales.Columns[e.ColumnIndex].Name == "deleteButton")
+            {
+                Modal_Delete delete = new Modal_Delete();
+                delete.deleteMode = 2;
+                delete.ShowDialog();
+                FillTable(this.startDate, this.endDate);
+            }
+        }
+
+        private void datagrid_sales_RowEnter(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                //Set current row
+                DataGridViewRow currentRow = datagrid_sales.Rows[e.RowIndex];
+
+                //Fill the properties
+                selectedTransaction = datagrid_sales.Rows[e.RowIndex].Cells[1].Value.ToString();
+                sales.refnumber = datagrid_sales.Rows[e.RowIndex].Cells[1].Value.ToString();
+            }
+        }
+
+        private void textbox_search_TextChanged(object sender, EventArgs e)
+        {
+            DataView dataView = salesTable.DefaultView;
+            dataView.RowFilter = string.Format("Reference like '%{0}%'", textbox_search.Text.TrimEnd());
+            datagrid_sales.DataSource = dataView.ToTable();
+        }
+
         //Methods
         private async Task FillTable(DateTime startDate, DateTime endDate)
         {
@@ -186,36 +217,9 @@ namespace SMD_Water_Station.Views
             }
         }
 
-        private void datagrid_sales_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void DisplayTotalReturns()
         {
-            if (datagrid_sales.Columns[e.ColumnIndex].Name == "deleteButton")
-            {
-                Modal_Delete delete = new Modal_Delete();
-                delete.deleteMode = 2;
-                delete.ShowDialog();
-                FillTable(this.startDate, this.endDate);
-            }
+
         }
-
-        private void datagrid_sales_RowEnter(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.RowIndex >= 0)
-            {
-                //Set current row
-                DataGridViewRow currentRow = datagrid_sales.Rows[e.RowIndex];
-
-                //Fill the properties
-                selectedTransaction = datagrid_sales.Rows[e.RowIndex].Cells[1].Value.ToString();
-                sales.refnumber = datagrid_sales.Rows[e.RowIndex].Cells[1].Value.ToString();
-            }
-        }
-
-        private void textbox_search_TextChanged(object sender, EventArgs e)
-        {
-            DataView dataView = salesTable.DefaultView;
-            dataView.RowFilter = string.Format("Reference like '%{0}%'", textbox_search.Text.TrimEnd());
-            datagrid_sales.DataSource = dataView.ToTable();
-        }
-
     }
 }

@@ -170,12 +170,16 @@ E:\Projects\SMD-POS\bin\Debug\System.Memory.xml
 E:\Projects\SMD-POS\bin\Debug\System.Numerics.Vectors.xml
 E:\Projects\SMD-POS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 E:\Projects\SMD-POS\obj\Debug\SMD Water Station.csproj.AssemblyReference.cache
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Frontend.Form_signup_personal.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Frontend.MainWindow.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.AccountView.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.HomeView.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Properties.Resources.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Signin.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_AddToCart.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_ChangePassword.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_Delete.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_EditPersonal.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_EditProduct.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_EditSupplier.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_NewProduct.resources
@@ -184,14 +188,15 @@ E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_Payment.resou
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_UpdateStocks.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.ProductsView.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.SalesView.resources
-E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.SuppliersView.resources
 E:\Projects\SMD-POS\obj\Debug\SMD Water Station.csproj.GenerateResource.cache
 E:\Projects\SMD-POS\obj\Debug\SMD Water Station.csproj.CoreCompileInputs.cache
 E:\Projects\SMD-POS\obj\Debug\SMD Water Station.exe.manifest
 E:\Projects\SMD-POS\obj\Debug\SMD Water Station.application
 E:\Projects\SMD-POS\obj\Debug\SMD Water Station.exe
 E:\Projects\SMD-POS\obj\Debug\SMD Water Station.pdb
-E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.AccountView.resources
-E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_EditPersonal.resources
-E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_ChangePassword.resources
-E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Frontend.Form_signup_personal.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.MaterialsView.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_NewMaterial.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_EditMaterial.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_UpdateMaterialStocks.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Forms.Form_Suppliers.resources
+E:\Projects\SMD-POS\obj\Debug\SMD Water Station.csproj.CopyComplete
