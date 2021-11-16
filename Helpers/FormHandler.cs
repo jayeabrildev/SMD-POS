@@ -23,8 +23,12 @@ namespace SMD_Water_Station.Helpers
 
         public static void ShowMaininterface()
         {
-            MainWindow = new MainWindow();
             MainWindow.Show();
+        }
+
+        public static void CloseMainInterface()
+        {
+            MainWindow.Close();
         }
     }
 }

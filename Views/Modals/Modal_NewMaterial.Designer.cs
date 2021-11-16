@@ -105,6 +105,11 @@ namespace SMD_Water_Station.Views.Modals
             this.nud_initialStocks.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nud_initialStocks.ForeColor = System.Drawing.Color.White;
             this.nud_initialStocks.Location = new System.Drawing.Point(288, 100);
+            this.nud_initialStocks.Maximum = new decimal(new int[] {
+            9999,
+            0,
+            0,
+            0});
             this.nud_initialStocks.Minimum = new decimal(new int[] {
             1,
             0,

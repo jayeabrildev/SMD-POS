@@ -79,11 +79,11 @@ namespace SMD_Water_Station.Views
             if (datagrid_sales.Columns[e.ColumnIndex].Name == "deleteButton")
             {
                 Modal_DeleteTransaction deleteTransaction = new Modal_DeleteTransaction();
-                deleteTransaction.transactionID = datagrid_sales.Rows[e.RowIndex].Cells[0].Value.ToString();
+                deleteTransaction.transactionID = datagrid_sales.Rows[e.RowIndex].Cells[1].Value.ToString();
                 deleteTransaction.refnumber = sales.refnumber;
-                deleteTransaction.productDesc = datagrid_sales.Rows[e.RowIndex].Cells[2].Value.ToString();
-                deleteTransaction.quantity = Convert.ToInt32(datagrid_sales.Rows[e.RowIndex].Cells[3].Value);
-                deleteTransaction.amount = Convert.ToDouble(datagrid_sales.Rows[e.RowIndex].Cells[4].Value);
+                deleteTransaction.productDesc = datagrid_sales.Rows[e.RowIndex].Cells[3].Value.ToString();
+                deleteTransaction.quantity = Convert.ToInt32(datagrid_sales.Rows[e.RowIndex].Cells[4].Value);
+                deleteTransaction.amount = Convert.ToDouble(datagrid_sales.Rows[e.RowIndex].Cells[5].Value);
                 deleteTransaction.ShowDialog();
                 FillTable(this.startDate, this.endDate);
             }
@@ -97,8 +97,8 @@ namespace SMD_Water_Station.Views
                 DataGridViewRow currentRow = datagrid_sales.Rows[e.RowIndex];
 
                 //Fill the properties
-                selectedTransaction = datagrid_sales.Rows[e.RowIndex].Cells[1].Value.ToString();
-                sales.refnumber = datagrid_sales.Rows[e.RowIndex].Cells[1].Value.ToString();
+                selectedTransaction = datagrid_sales.Rows[e.RowIndex].Cells[0].Value.ToString();
+                sales.refnumber = datagrid_sales.Rows[e.RowIndex].Cells[2].Value.ToString();
             }
         }
 

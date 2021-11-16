@@ -71,8 +71,7 @@ namespace SMD_Water_Station.Views.Modals
         {
             User user = new User();
             user.ChangePassword(textbox_confirmNewPass.Text.TrimEnd(), User._userID);
-            MessageBox.Show("Password successfully changed, automatically signing out.");
-            FormHandler.MainWindow.Close();
+            FormHandler.CloseMainInterface();
             FormHandler.signIn.Show();
         }
     }

@@ -89,15 +89,8 @@ namespace SMD_Water_Station.Frontend
         }
 
         private void button_logout_Click(object sender, EventArgs e)
-        {
-            DialogResult result = MessageBox.Show("Are you sure you want to Logout?","Logout",
-               MessageBoxButtons.OKCancel);
-
-            if(result == DialogResult.OK)
-            {
-                FormHandler.signIn.Show();
+        { 
                 this.Close();
-            }
         }
 
         private void MainWindow_FormClosed(object sender, FormClosedEventArgs e)

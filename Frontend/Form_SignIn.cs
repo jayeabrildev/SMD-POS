@@ -62,8 +62,8 @@ namespace SMD_Water_Station
                 User._userID = user.userId;
                 FormHandler.signIn.Hide();
                 FormHandler.signIn.Textbox_password.Clear();
-                MainWindow main = new MainWindow();
-                main.Show();
+                FormHandler.MainWindow = new MainWindow();
+                FormHandler.ShowMaininterface();
             }
             else
             {
