@@ -76,6 +76,7 @@ namespace SMD_Water_Station.Frontend
                 if(user.Register() == true)
                 {
                     MessageBox.Show("Registration Successful");
+                    Reset();
                 }
                 else
                 {
@@ -134,6 +135,9 @@ namespace SMD_Water_Station.Frontend
             textbox_contact.Clear();
             textbox_address.Clear();
             textbox_email.Clear();
+
+            button_next.Enabled = false;
+            button_submit.Enabled = false;
 
             ShowAccountDetails();
         }

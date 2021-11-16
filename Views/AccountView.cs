@@ -32,6 +32,9 @@ namespace SMD_Water_Station.Views
             Modal_EditPersonal editPersonal = new Modal_EditPersonal();
             editPersonal.firstname = user.firstname;
             editPersonal.lastname = user.surname;
+            editPersonal.address = user.address;
+            editPersonal.contact = user.contact;
+            editPersonal.email = user.email;
             editPersonal.ShowDialog();
             if (editPersonal.DialogResult == DialogResult.OK)
             {
@@ -45,6 +48,9 @@ namespace SMD_Water_Station.Views
             label_firstname.Text = user.firstname;
             label_lastname.Text = user.surname;
             label_accountID.Text = User._userID;
+            label_address.Text = user.address;
+            label_contact.Text = user.contact;
+            label_email.Text = user.email;
         }
 
         private void button1_Click(object sender, EventArgs e)

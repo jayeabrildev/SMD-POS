@@ -53,6 +53,7 @@ namespace SMD_Water_Station.Views
                 dtp_end.MinDate = sales.SetMinimumDate();
 
                 dtp_start.Value = dtp_start.MinDate;
+                dtp_end.Value = dtp_end.MaxDate;
             }
 
             
@@ -77,9 +78,13 @@ namespace SMD_Water_Station.Views
         {
             if (datagrid_sales.Columns[e.ColumnIndex].Name == "deleteButton")
             {
-                Modal_Delete delete = new Modal_Delete();
-                delete.deleteMode = 2;
-                delete.ShowDialog();
+                Modal_DeleteTransaction deleteTransaction = new Modal_DeleteTransaction();
+                deleteTransaction.transactionID = datagrid_sales.Rows[e.RowIndex].Cells[0].Value.ToString();
+                deleteTransaction.refnumber = sales.refnumber;
+                deleteTransaction.productDesc = datagrid_sales.Rows[e.RowIndex].Cells[2].Value.ToString();
+                deleteTransaction.quantity = Convert.ToInt32(datagrid_sales.Rows[e.RowIndex].Cells[3].Value);
+                deleteTransaction.amount = Convert.ToDouble(datagrid_sales.Rows[e.RowIndex].Cells[4].Value);
+                deleteTransaction.ShowDialog();
                 FillTable(this.startDate, this.endDate);
             }
         }
@@ -217,9 +222,6 @@ namespace SMD_Water_Station.Views
             }
         }
 
-        private void DisplayTotalReturns()
-        {
-
-        }
+        
     }
 }

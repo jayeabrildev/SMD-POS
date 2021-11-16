@@ -206,12 +206,25 @@
     <Compile Include="Views\AccountView.Designer.cs">
       <DependentUpon>AccountView.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Forms\Form_ProductStocksReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\Form_ProductStocksReports.Designer.cs">
+      <DependentUpon>Form_ProductStocksReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Forms\Form_SalesReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Forms\Form_SalesReports.Designer.cs">
+      <DependentUpon>Form_SalesReports.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\Forms\Form_Suppliers.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\Forms\Form_Suppliers.Designer.cs">
       <DependentUpon>Form_Suppliers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Forms\StockReports.cs" />
     <Compile Include="Views\HomeView.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -243,6 +256,12 @@
     </Compile>
     <Compile Include="Views\Modals\Modal_Delete.Designer.cs">
       <DependentUpon>Modal_Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_DeleteTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Modals\Modal_DeleteTransaction.Designer.cs">
+      <DependentUpon>Modal_DeleteTransaction.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\Modals\Modal_EditMaterial.cs">
       <SubType>Form</SubType>
@@ -325,6 +344,12 @@
     <EmbeddedResource Include="Views\AccountView.resx">
       <DependentUpon>AccountView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Form_ProductStocksReports.resx">
+      <DependentUpon>Form_ProductStocksReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Forms\Form_SalesReports.resx">
+      <DependentUpon>Form_SalesReports.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Forms\Form_Suppliers.resx">
       <DependentUpon>Form_Suppliers.cs</DependentUpon>
     </EmbeddedResource>
@@ -350,6 +375,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Modals\Modal_Delete.resx">
       <DependentUpon>Modal_Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Modals\Modal_DeleteTransaction.resx">
+      <DependentUpon>Modal_DeleteTransaction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Modals\Modal_EditMaterial.resx">
       <DependentUpon>Modal_EditMaterial.cs</DependentUpon>

@@ -11,6 +11,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Models;
+using SMD_Water_Station.Views.Forms;
+using ClosedXML.Excel;
 
 namespace SMD_Water_Station.Views
 {
@@ -21,7 +23,6 @@ namespace SMD_Water_Station.Views
 
         Product product = new Product();
         Stocks stocks = new Stocks();
-        Supplier supplier = new Supplier();
 
         public static string selectedProduct;
 
@@ -53,6 +54,7 @@ namespace SMD_Water_Station.Views
             BindingFlags.Instance | BindingFlags.SetProperty, null,
             datagrid_products, new object[] { true });
 
+            label_lowStocks.Text = product.CountLowStockProducts().ToString();
         }
 
         private void DisplayLowStocks()
@@ -196,5 +198,39 @@ namespace SMD_Water_Station.Views
                     break;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form_ProductStocksReports stockReports = new Form_ProductStocksReports();
+            stockReports.Show();
+        }
+
+        private void button_export_Click(object sender, EventArgs e)
+        {
+            ExportToExcel();    
+        }
+
+        private void ExportToExcel()
+        {
+            using (SaveFileDialog dialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            {
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (XLWorkbook workbook = new XLWorkbook())
+                        {
+                            workbook.Worksheets.Add(productsTable, "Products");
+                            workbook.SaveAs(dialog.FileName);
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
+                }
+            }
+        }
+
     }
 }

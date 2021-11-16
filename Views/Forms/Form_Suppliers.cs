@@ -1,4 +1,5 @@
-﻿using Models;
+﻿using ClosedXML.Excel;
+using Models;
 using SMD_Water_Station.Views.Modals;
 using System;
 using System.Collections.Generic;
@@ -109,6 +110,7 @@ namespace SMD_Water_Station.Views.Forms
         {
             Modal_NewSupplier newSupplier = new Modal_NewSupplier();
             newSupplier.ShowDialog();
+            FillTable();
         }
 
         private void textbox_search_TextChanged(object sender, EventArgs e)
@@ -136,6 +138,32 @@ namespace SMD_Water_Station.Views.Forms
                     button_editSupplier.Enabled = true;
                     button_deleteSupplier.Enabled = true;
                     break;
+            }
+        }
+
+        private void button_export_Click(object sender, EventArgs e)
+        {
+            ExportToExcel();
+        }
+        private void ExportToExcel()
+        {
+            using (SaveFileDialog dialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            {
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (XLWorkbook workbook = new XLWorkbook())
+                        {
+                            workbook.Worksheets.Add(suppliersTable, "Suppliers");
+                            workbook.SaveAs(dialog.FileName);
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
+                }
             }
         }
     }

@@ -199,4 +199,6 @@ E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_NewMaterial.r
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_EditMaterial.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_UpdateMaterialStocks.resources
 E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Forms.Form_Suppliers.resources
-E:\Projects\SMD-POS\obj\Debug\SMD Water Station.csproj.CopyComplete
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Forms.Form_ProductStocksReports.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Forms.Form_SalesReports.resources
+E:\Projects\SMD-POS\obj\Debug\SMD_Water_Station.Views.Modals.Modal_DeleteTransaction.resources

@@ -15,6 +15,8 @@ namespace SMD_Water_Station.Views.Modals
     {
         Product product = new Product();
         Stocks stocks = new Stocks();
+
+        string mode;
         public Modal_UpdateStocks()
         {
             InitializeComponent();
@@ -42,11 +44,13 @@ namespace SMD_Water_Station.Views.Modals
         {
             if(rb_add.Checked == true)
             {
-                stocks.AddStocks(ProductsView.selectedProduct, (int)nud_quantity.Value, combobox_remarks.Text.ToString());
+                mode = "Add";
+                stocks.AddStocks(ProductsView.selectedProduct, (int)nud_quantity.Value, combobox_remarks.Text.ToString(), mode);
             }
             else
             {
-                stocks.Deduct(ProductsView.selectedProduct, (int)nud_quantity.Value, combobox_remarks.Text.ToString());
+                mode = "Deduct";
+                stocks.Deduct(ProductsView.selectedProduct, (int)nud_quantity.Value, combobox_remarks.Text.ToString(), mode);
             }
             this.Close();
         }

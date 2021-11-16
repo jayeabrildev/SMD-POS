@@ -27,7 +27,6 @@ namespace SMD_Water_Station.Views.Modals
         private void Modal_AddToCart_Load(object sender, EventArgs e)
         {
             label_maxQty.Text = "(Max " + nud_qty.Maximum + ")";
-            label_sku.Text = sku;
         }
 
     }

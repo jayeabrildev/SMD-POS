@@ -51,8 +51,6 @@ namespace SMD_Water_Station.Views
             this.cartesian_sales = new LiveCharts.WinForms.CartesianChart();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label_returns = new System.Windows.Forms.Label();
             this.advancedPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_sales)).BeginInit();
             this.advancedPanel2.SuspendLayout();
@@ -218,7 +216,7 @@ namespace SMD_Water_Station.Views
             this.advancedPanel4.ShadowColor = System.Drawing.Color.DimGray;
             this.advancedPanel4.ShadowShift = 0;
             this.advancedPanel4.ShadowStyle = BevelPanel.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel4.Size = new System.Drawing.Size(1001, 362);
+            this.advancedPanel4.Size = new System.Drawing.Size(1001, 397);
             this.advancedPanel4.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel4.Style = BevelPanel.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel4.TabIndex = 26;
@@ -264,7 +262,7 @@ namespace SMD_Water_Station.Views
             this.datagrid_sales.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.datagrid_sales.RowTemplate.Height = 24;
             this.datagrid_sales.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.datagrid_sales.Size = new System.Drawing.Size(972, 330);
+            this.datagrid_sales.Size = new System.Drawing.Size(972, 365);
             this.datagrid_sales.TabIndex = 5;
             this.datagrid_sales.VirtualMode = true;
             this.datagrid_sales.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.datagrid_sales_CellClick);
@@ -282,13 +280,13 @@ namespace SMD_Water_Station.Views
             this.advancedPanel2.EndColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel2.FlatBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel2.ForeColor = System.Drawing.Color.White;
-            this.advancedPanel2.Location = new System.Drawing.Point(252, 433);
+            this.advancedPanel2.Location = new System.Drawing.Point(252, 473);
             this.advancedPanel2.Name = "advancedPanel2";
             this.advancedPanel2.RectRadius = 12;
             this.advancedPanel2.ShadowColor = System.Drawing.Color.DimGray;
             this.advancedPanel2.ShadowShift = 0;
             this.advancedPanel2.ShadowStyle = BevelPanel.AdvancedPanel.ShadowMode.ForwardDiagonal;
-            this.advancedPanel2.Size = new System.Drawing.Size(1002, 262);
+            this.advancedPanel2.Size = new System.Drawing.Size(1002, 222);
             this.advancedPanel2.StartColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.advancedPanel2.Style = BevelPanel.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel2.TabIndex = 25;
@@ -297,10 +295,9 @@ namespace SMD_Water_Station.Views
             // 
             this.cartesian_sales.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.cartesian_sales.CausesValidation = false;
-            this.cartesian_sales.Enabled = false;
-            this.cartesian_sales.Location = new System.Drawing.Point(21, 40);
+            this.cartesian_sales.Location = new System.Drawing.Point(21, 48);
             this.cartesian_sales.Name = "cartesian_sales";
-            this.cartesian_sales.Size = new System.Drawing.Size(956, 193);
+            this.cartesian_sales.Size = new System.Drawing.Size(956, 165);
             this.cartesian_sales.TabIndex = 5;
             this.cartesian_sales.Text = "cartesianChart1";
             // 
@@ -324,34 +321,12 @@ namespace SMD_Water_Station.Views
             this.panel1.Size = new System.Drawing.Size(200, 200);
             this.panel1.TabIndex = 35;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 212);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 19);
-            this.label2.TabIndex = 37;
-            this.label2.Text = "Total Returns";
-            // 
-            // label_returns
-            // 
-            this.label_returns.AutoSize = true;
-            this.label_returns.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_returns.Location = new System.Drawing.Point(22, 232);
-            this.label_returns.Name = "label_returns";
-            this.label_returns.Size = new System.Drawing.Size(94, 25);
-            this.label_returns.TabIndex = 36;
-            this.label_returns.Text = "PHP 0.00";
-            // 
             // SalesView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label_returns);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.textbox_search);
             this.Controls.Add(this.label12);
@@ -402,7 +377,5 @@ namespace SMD_Water_Station.Views
         private System.Windows.Forms.TextBox textbox_search;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label_returns;
     }
 }

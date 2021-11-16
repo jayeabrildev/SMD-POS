@@ -29,9 +29,9 @@ namespace SMD_Water_Station.Views
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.button_newMaterial = new System.Windows.Forms.Button();
             this.button_viewSuppliers = new System.Windows.Forms.Button();
@@ -40,6 +40,7 @@ namespace SMD_Water_Station.Views
             this.button_updateStocks = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.advancedPanel2 = new BevelPanel.AdvancedPanel();
+            this.checkbox_viewLowStocks = new System.Windows.Forms.CheckBox();
             this.datagrid_materials = new System.Windows.Forms.DataGridView();
             this.textbox_search = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -55,6 +56,7 @@ namespace SMD_Water_Station.Views
             this.panel2 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button_export = new System.Windows.Forms.Button();
             this.advancedPanel3.SuspendLayout();
             this.advancedPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.datagrid_materials)).BeginInit();
@@ -79,7 +81,7 @@ namespace SMD_Water_Station.Views
             this.button_newMaterial.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button_newMaterial.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button_newMaterial.ForeColor = System.Drawing.Color.White;
-            this.button_newMaterial.Location = new System.Drawing.Point(909, 452);
+            this.button_newMaterial.Location = new System.Drawing.Point(909, 503);
             this.button_newMaterial.Name = "button_newMaterial";
             this.button_newMaterial.Size = new System.Drawing.Size(363, 35);
             this.button_newMaterial.TabIndex = 23;
@@ -169,6 +171,7 @@ namespace SMD_Water_Station.Views
             | System.Windows.Forms.AnchorStyles.Right)));
             this.advancedPanel2.BackColor = System.Drawing.Color.Transparent;
             this.advancedPanel2.BackgroundGradientMode = BevelPanel.AdvancedPanel.PanelGradientMode.Vertical;
+            this.advancedPanel2.Controls.Add(this.checkbox_viewLowStocks);
             this.advancedPanel2.Controls.Add(this.datagrid_materials);
             this.advancedPanel2.Controls.Add(this.textbox_search);
             this.advancedPanel2.Controls.Add(this.label12);
@@ -187,6 +190,19 @@ namespace SMD_Water_Station.Views
             this.advancedPanel2.Style = BevelPanel.AdvancedPanel.BevelStyle.Flat;
             this.advancedPanel2.TabIndex = 26;
             // 
+            // checkbox_viewLowStocks
+            // 
+            this.checkbox_viewLowStocks.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.checkbox_viewLowStocks.AutoSize = true;
+            this.checkbox_viewLowStocks.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkbox_viewLowStocks.Location = new System.Drawing.Point(672, 17);
+            this.checkbox_viewLowStocks.Name = "checkbox_viewLowStocks";
+            this.checkbox_viewLowStocks.Size = new System.Drawing.Size(167, 24);
+            this.checkbox_viewLowStocks.TabIndex = 30;
+            this.checkbox_viewLowStocks.Text = "View low stocks only";
+            this.checkbox_viewLowStocks.UseVisualStyleBackColor = true;
+            this.checkbox_viewLowStocks.CheckedChanged += new System.EventHandler(this.checkbox_viewLowStocks_CheckedChanged);
+            // 
             // datagrid_materials
             // 
             this.datagrid_materials.AllowUserToAddRows = false;
@@ -199,23 +215,23 @@ namespace SMD_Water_Station.Views
             this.datagrid_materials.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
             this.datagrid_materials.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.datagrid_materials.ClipboardCopyMode = System.Windows.Forms.DataGridViewClipboardCopyMode.Disable;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.datagrid_materials.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.datagrid_materials.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.datagrid_materials.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.datagrid_materials.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.datagrid_materials.DefaultCellStyle = dataGridViewCellStyle5;
             this.datagrid_materials.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.datagrid_materials.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(60)))));
             this.datagrid_materials.Location = new System.Drawing.Point(18, 50);
@@ -225,8 +241,8 @@ namespace SMD_Water_Station.Views
             this.datagrid_materials.RowHeadersVisible = false;
             this.datagrid_materials.RowHeadersWidth = 51;
             this.datagrid_materials.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.datagrid_materials.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.datagrid_materials.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.datagrid_materials.RowTemplate.Height = 24;
             this.datagrid_materials.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.datagrid_materials.Size = new System.Drawing.Size(821, 551);
@@ -402,11 +418,28 @@ namespace SMD_Water_Station.Views
             this.label1.TabIndex = 3;
             this.label1.Text = "Material Details";
             // 
+            // button_export
+            // 
+            this.button_export.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button_export.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(91)))), ((int)(((byte)(122)))));
+            this.button_export.FlatAppearance.BorderSize = 0;
+            this.button_export.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button_export.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button_export.ForeColor = System.Drawing.Color.White;
+            this.button_export.Location = new System.Drawing.Point(909, 448);
+            this.button_export.Name = "button_export";
+            this.button_export.Size = new System.Drawing.Size(363, 35);
+            this.button_export.TabIndex = 30;
+            this.button_export.Text = " ";
+            this.button_export.UseVisualStyleBackColor = false;
+            this.button_export.Click += new System.EventHandler(this.button1_Click);
+            // 
             // MaterialsView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(23)))), ((int)(((byte)(34)))));
+            this.Controls.Add(this.button_export);
             this.Controls.Add(this.button_viewSuppliers);
             this.Controls.Add(this.advancedPanel3);
             this.Controls.Add(this.advancedPanel2);
@@ -455,5 +488,7 @@ namespace SMD_Water_Station.Views
         private System.Windows.Forms.Button button_updateStocks;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button button_viewSuppliers;
+        private System.Windows.Forms.CheckBox checkbox_viewLowStocks;
+        private System.Windows.Forms.Button button_export;
     }
 }

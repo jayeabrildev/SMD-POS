@@ -170,7 +170,7 @@ namespace SMD_Water_Station.Views
                     sales.NewTransaction(this.referenceNumber, item.SKU, item.QTY, item.SubTotal, DateTime.Today);
 
                     Stocks stocks = new Stocks();
-                    stocks.Deduct(item.SKU, item.QTY, "Sales");
+                    stocks.Deduct(item.SKU, item.QTY, "Sales", "Sales");
                 }
                 NewTransaction();
             }
@@ -229,7 +229,7 @@ namespace SMD_Water_Station.Views
             DataGridViewButtonColumn modifyButton = new DataGridViewButtonColumn();
             datagrid_orders.Columns.Add(modifyButton);
             modifyButton.HeaderText = "Options";
-            modifyButton.Text = "Modify Amount";
+            modifyButton.Text = "Modify QTY";
             modifyButton.Name = "modifyAmount";
             modifyButton.FlatStyle = FlatStyle.Flat;
             modifyButton.UseColumnTextForButtonValue = true;

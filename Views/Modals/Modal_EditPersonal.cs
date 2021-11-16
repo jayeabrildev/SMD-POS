@@ -16,6 +16,11 @@ namespace SMD_Water_Station.Views.Modals
         public string userID;
         public string firstname;
         public string lastname;
+        public string address;
+        public string contact;
+        public string email;
+
+
         public Modal_EditPersonal()
         {
             InitializeComponent();
@@ -26,41 +31,63 @@ namespace SMD_Water_Station.Views.Modals
             userID = User._userID;
             textbox_firstname.Text = firstname;
             textbox_lastname.Text = lastname;
+            textbox_address.Text = address;
+            textbox_contactnumber.Text = contact;
+            textbox_email.Text = email;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
 
         private void textbox_firstname_TextChanged(object sender, EventArgs e)
         {
-            ValidateName();
+            CheckEmpty();
         }
 
         private void textbox_lastname_TextChanged(object sender, EventArgs e)
         {
-            ValidateName();
+            CheckEmpty();
         }
 
-        private void ValidateName()
+        private void CheckEmpty()
         {
-            if (textbox_firstname.Text.TrimEnd() == firstname && textbox_lastname.Text.TrimEnd() == lastname)
+            TextBox[] textboxes = { textbox_firstname, textbox_lastname, textbox_address, textbox_contactnumber, textbox_email };
+            foreach (TextBox textbox in textboxes)
             {
-                button_save.Enabled = false;
-            }
-            else
-            {
-                button_save.Enabled = true;
+                if (textbox.Text.Length == 0 || textbox.Text.TrimEnd() == "") 
+                {
+                    button_save.Enabled = false;
+                }
+                else
+                {
+                    button_save.Enabled = true;
+                }
             }
         }
+
+        
 
         private void button_save_Click(object sender, EventArgs e)
         {
-            User user = new User();
-            string newFirstname = textbox_firstname.Text.TrimEnd();
-            string newSurname = textbox_lastname.Text.TrimEnd();
-            user.UpdateInformation(newFirstname, newSurname, userID);
+            try
+            {
+                User user = new User();
+                string newFirstname = textbox_firstname.Text.TrimEnd();
+                string newSurname = textbox_lastname.Text.TrimEnd();
+                string newAddress = textbox_address.Text.TrimEnd();
+                string newContact = textbox_contactnumber.Text.TrimEnd();
+                string newEmail = textbox_email.Text.TrimEnd();
+
+                user.UpdateInformation(newFirstname, newSurname, newAddress, newContact, newEmail, userID);
+                MessageBox.Show("Updated Successfully", "Message");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

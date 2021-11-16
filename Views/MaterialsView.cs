@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using Models;
 using SMD_Water_Station.Views.Modals;
 using SMD_Water_Station.Views.Forms;
+using ClosedXML.Excel;
 
 namespace SMD_Water_Station.Views
 {
@@ -97,6 +98,28 @@ namespace SMD_Water_Station.Views
             FillTable();
         }
     
+
+        private void button_editMaterials_Click(object sender, EventArgs e)
+        {
+            Modal_EditMaterial editMaterial = new Modal_EditMaterial();
+            editMaterial.ShowDialog();
+            FillTable();
+        }
+
+        private void button_updateStocks_Click(object sender, EventArgs e)
+        {
+            Modal_UpdateMaterialStocks updateMaterialStocks = new Modal_UpdateMaterialStocks();
+            updateMaterialStocks.ShowDialog();
+            FillTable();
+        }
+
+        private void button_viewSuppliers_Click(object sender, EventArgs e)
+        {
+            Form_Suppliers suppliers = new Form_Suppliers();
+            suppliers.Show();
+        }
+        
+        //Functions
         private async Task FillTable()
         {
             textbox_search.Clear();
@@ -117,24 +140,74 @@ namespace SMD_Water_Station.Views
             datagrid_materials, new object[] { true });
         }
 
-        private void button_editMaterials_Click(object sender, EventArgs e)
+        private void DisplayLowStocks()
         {
-            Modal_EditMaterial editMaterial = new Modal_EditMaterial();
-            editMaterial.ShowDialog();
-            FillTable();
+            DataView dv = new DataView(materialsTable);
+            dv.RowFilter = "Stocks <= 10"; // query example = "id = 10"
+            datagrid_materials.DataSource = dv.ToTable();
+
+            switch (datagrid_materials.Rows.Count)
+            {
+                case 0:
+                    button_editMaterials.Enabled = false;
+                    button_deleteMaterial.Enabled = false;
+                    button_updateStocks.Enabled = false;
+
+                    rawMaterial.id = 0;
+
+                    label_materialID.Text = "----------";
+                    label_description.Text = "----------";
+                    label_stocks.Text = "0";
+
+                    break;
+                default:
+                    button_editMaterials.Enabled = true;
+                    button_deleteMaterial.Enabled = true;
+                    button_updateStocks.Enabled = true;
+                    break;
+            }
+
         }
 
-        private void button_updateStocks_Click(object sender, EventArgs e)
+        private void checkbox_viewLowStocks_CheckedChanged(object sender, EventArgs e)
         {
-            Modal_UpdateMaterialStocks updateMaterialStocks = new Modal_UpdateMaterialStocks();
-            updateMaterialStocks.ShowDialog();
-            FillTable();
+            textbox_search.Clear();
+            switch (checkbox_viewLowStocks.Checked)
+            {
+                case true:
+                    DisplayLowStocks();
+                    break;
+                case false:
+                    FillTable();
+                    break;
+            }
         }
 
-        private void button_viewSuppliers_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            Form_Suppliers suppliers = new Form_Suppliers();
-            suppliers.Show();
+            ExportToExcel();
+        }
+
+        private void ExportToExcel()
+        {
+            using (SaveFileDialog dialog = new SaveFileDialog() { Filter = "Excel Workbook|*.xlsx" })
+            {
+                if (dialog.ShowDialog() == DialogResult.OK)
+                {
+                    try
+                    {
+                        using (XLWorkbook workbook = new XLWorkbook())
+                        {
+                            workbook.Worksheets.Add(materialsTable, "Materials");
+                            workbook.SaveAs(dialog.FileName);
+                        }
+                    }
+                    catch (Exception)
+                    {
+                        throw;
+                    }
+                }
+            }
         }
     }
 }

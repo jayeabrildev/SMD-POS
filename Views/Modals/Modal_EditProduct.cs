@@ -35,12 +35,6 @@ namespace SMD_Water_Station.Views.Modals
                 textbox_description.Text = product.description;
                 nud_price.Value = (decimal)product.price;
                 DataTable suppliersTable = supplier.ListSuppliers();
-
-                combobox_supplier.ValueMember = suppliersTable.Columns[0].ToString();
-                combobox_supplier.DisplayMember = suppliersTable.Columns[1].ToString();
-                combobox_supplier.DataSource = suppliersTable;
-
-                combobox_supplier.SelectedValue = product.supplierID;
             }
             catch (Exception ex)
             {
@@ -56,9 +50,8 @@ namespace SMD_Water_Station.Views.Modals
                 product.productID = ProductsView.selectedProduct;
                 product.description = textbox_description.Text.TrimEnd();
                 product.price = (double)nud_price.Value;
-                product.supplierID = (int)combobox_supplier.SelectedValue;
-
-                product.UpdateProductInformation(ProductsView.selectedProduct, product.description, product.price, product.supplierID);
+                product.UpdateProductInformation(ProductsView.selectedProduct, product.description, product.price);
+                MessageBox.Show("Updated successfully", "Message");
             }
             catch (Exception ex)
             {
